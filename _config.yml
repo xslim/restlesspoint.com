@@ -1,0 +1,70 @@
+title:            Restless Point
+tagline:          Design Faux Pas
+description:      "Personal website of designer slash illustrator Michael Rose."
+logo:             site-logo.png
+disqus_shortname: restlesspoint
+# Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              http://restlesspoint.com
+
+# Owner/author information
+owner:
+  name:           Taras Kalapun
+  avatar:         taras-kalapun-photo.jpg
+  bio:            "it problem solver"
+  email:          t@kalapun.com
+  twitter:        
+  instagram:      
+  github:         
+  facebook:       
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    "http://plus.google.com/+TarasKalapun"
+
+feed: http://feeds.feedburner.com/RestlessPoint
+
+google_analytics: UA-2087894-20
+google_verify: 
+bing_verify:   
+alexa_verify:  
+
+future:      true
+lsi:         false
+pygments:    true
+markdown:    kramdown
+# http://jekyllrb.com/docs/permalinks/
+permalink:   /:categories/:title/
+
+# Internal pages/posts to include in top navigation
+links:
+  - title: Locations
+    url: /locations/
+  - title: Articles
+    url: /articles/
+  - title: About
+    url: /about/
+
+maruku:
+  use_tex:    false
+  use_divs:   false
+  png_engine: blahtex
+  png_dir:    images/latex
+  png_url:    /images/latex
+
+rdiscount:
+  extensions: [smart]
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+  
+  coderay:
+    coderay_line_numbers: 
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "codekit-config.json", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "Gruntfile.js", "package.json"]
