@@ -19,6 +19,7 @@ desc "Push to gh-pages"
 task :push do
   Dir.mktmpdir do |tmp|
     system "mv _site/* #{tmp}"
+    system "cp CNAME #{tmp}"
     system "git checkout gh-pages"
     system "rm -rf *"
     system "mv #{tmp}/* ."
