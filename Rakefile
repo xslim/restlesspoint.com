@@ -15,11 +15,11 @@ task :generate do
 end
 
 
-desc "Generate and publish blog to gh-pages"
-task :publish => [:generate] do
+desc "Push to gh-pages"
+task :push do
   Dir.mktmpdir do |tmp|
     system "mv _site/* #{tmp}"
-    system "git checkout -b gh-pages"
+    system "git checkout gh-pages"
     system "rm -rf *"
     system "mv #{tmp}/* ."
     message = "Site updated at #{Time.now.utc}"
@@ -27,8 +27,7 @@ task :publish => [:generate] do
     system "git commit -am #{message.shellescape}"
     system "git push origin gh-pages --force"
     system "git checkout master"
-    system "echo yoyo"
   end
 end
 
-task :default => :publish
+task :default => :generate
