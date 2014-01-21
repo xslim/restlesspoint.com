@@ -1,7 +1,7 @@
 title:            Restless Point
-tagline:          Design Faux Pas
-description:      "Personal website of designer slash illustrator Michael Rose."
-logo:             site-logo.png
+tagline:          info for restless people
+description:      "Restless point."
+logo:             logo-50.png
 disqus_shortname: restlesspoint
 # Your site's domain goes here. Leave localhost server or blank when working locally.
 url:              http://restlesspoint.com

@@ -12,13 +12,13 @@
 	<!-- Twitter Cards -->
 	{% if page.layout == 'work' %}
 		<meta name="twitter:card" content="summary_large_image">
-		{% if page.image.feature %}<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">{% endif %}
+		{% if page.image.feature %}<meta name="twitter:image" content="/images/{{ page.image.feature }}">{% endif %}
 		{% else %}
 		{% if page.image.feature %}
 			<meta name="twitter:card" content="summary_large_image">
-			<meta name="twitter:image" content="{{ site.url }}/images/{{ page.image.feature }}">
+			<meta name="twitter:image" content="/images/{{ page.image.feature }}">
 			{% else %}<meta name="twitter:card" content="summary">
-			<meta name="twitter:image" content="{% if page.image.thumb %}{{ site.url }}/images/{{ page.image.thumb }}{% else %}{{ site.url }}/images/{{ site.logo }}{% endif %}">
+			<meta name="twitter:image" content="{% if page.image.thumb %}/images/{{ page.image.thumb }}{% else %}/images/{{ site.logo }}{% endif %}">
 		{% endif %}
 	{% endif %}
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
@@ -49,10 +49,10 @@
 	<meta http-equiv="cleartype" content="on">
 
 	<!-- Modernizr -->
-	<script src="{{ site.url }}/{% ministamp _assets/js/vendor/modernizr-2.6.2.custom.min.js js/vendor/modernizr.js %}"></script>
+	<script src="/{% ministamp _assets/js/vendor/modernizr-2.6.2.custom.min.js js/vendor/modernizr.js %}"></script>
 
 	<!-- For all browsers -->
-	<link rel="stylesheet" href="{{ site.url }}/{% ministamp _assets/css/main.min.css css/main.min.css %}">
+	<link rel="stylesheet" href="/{% ministamp _assets/css/main.min.css css/main.min.css %}">
 
 	<!-- Webfonts -->
 	<script src="//use.edgefonts.net/lato:n3,i3,n4,i4,n7.js"></script>
@@ -60,26 +60,26 @@
 
 	<!-- HTML5 Shiv -->
 	<!--[if lt IE 9]>
-		<script src="{{ site.url }}/{% ministamp _assets/js/vendor/html5shiv.js js/vendor/html5shiv.js %}"></script>
+		<script src="/{% ministamp _assets/js/vendor/html5shiv.js js/vendor/html5shiv.js %}"></script>
 	<![endif]-->
 
 	<!-- Icons -->
 	<!-- 16x16 -->
-	<link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
+	<link rel="shortcut icon" href="/favicon.ico">
 	<!-- 32x32 -->
-	<link rel="shortcut icon" href="{{ site.url }}/favicon.png">
+	<link rel="shortcut icon" href="/favicon.png">
 	<!-- non-retina iPhone pre iOS 7 -->
-	<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/icon57.png" sizes="57x57">
+	<link rel="apple-touch-icon-precomposed" href="/images/icon57.png" sizes="57x57">
 	<!-- non-retina iPad pre iOS 7 -->
-	<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/icon72.png" sizes="72x72">
+	<link rel="apple-touch-icon-precomposed" href="/images/icon72.png" sizes="72x72">
 	<!-- non-retina iPad iOS 7 -->
-	<link rel="apple-touch-icon" href="{{ site.url }}/images/icon76.png" sizes="76x76">
+	<link rel="apple-touch-icon" href="/images/icon76.png" sizes="76x76">
 	<!-- retina iPhone pre iOS 7 -->
-	<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/icon114.png" sizes="114x114">
+	<link rel="apple-touch-icon-precomposed" href="/images/icon114.png" sizes="114x114">
 	<!-- retina iPhone iOS 7 -->
-	<link rel="apple-touch-icon" href="{{ site.url }}/images/icon120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="/images/icon120.png" sizes="120x120">
 	<!-- retina iPad pre iOS 7 -->
-	<link rel="apple-touch-icon-precomposed" href="{{ site.url }}/images/icon144.png" sizes="144x144">
+	<link rel="apple-touch-icon-precomposed" href="/images/icon144.png" sizes="144x144">
 	<!-- retina iPad iOS 7 -->
-	<link rel="apple-touch-icon" href="{{ site.url }}/images/icon152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="/images/icon152.png" sizes="152x152">
 </head>
