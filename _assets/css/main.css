@@ -2348,9 +2348,9 @@ body {
 }
 
 #site-nav a:hover {
-  background-image: url(../../images/strike_bg.png);
+/*  background-image: url(../../images/strike_bg.png);
   background-position: left center;
-  background-repeat: repeat-x;
+  background-repeat: repeat-x;*/
 }
 
 @media only screen and (min-width: 48em) {
