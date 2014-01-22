@@ -142,10 +142,6 @@ prose:
           placeholder: "Choose Tags"
           options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
-      - name: "image"
-        field:
-          label: "Post Images"
-          element: "textarea"
       - name: "comments"
         field:
           label: "Allow comments"
@@ -167,10 +163,6 @@ prose:
           placeholder: "Choose Tags"
           options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
-      - name: "image"
-        field:
-          label: "Post Images"
-          element: "textarea"
       - name: "comments"
         field:
           label: "Allow comments"
