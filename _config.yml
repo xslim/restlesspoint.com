@@ -91,24 +91,21 @@ prose:
               value: "post"
             - name: "page"
               value: "page"
+          selected: "post"
       - name: "categories"
         field:
           element: "text"
+          label: "Categories"
           value: ""
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
     _posts/static:
       - name: "layout"
         field:
           element: "hidden"
           value: "page"
-      - name: "title"
+      - name: "description"
         field:
           element: "text"
-          label: "Title"
+          label: "Description"
           value: ""
       - name: "permalink"
         field:
@@ -124,8 +121,3 @@ prose:
         field:
           element: "hidden"
           value: "[articles, sailing]"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
