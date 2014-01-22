@@ -74,7 +74,7 @@ exclude: ["vendor",".bundle","lib", "config.rb", "Capfile", "config", "log", "Ra
 # Prose settings
 prose:
   rooturl: '_posts'
-  siteurl: 'http://restlesspoint.com'
+  siteurl: "http://restlesspoint.com"
   relativeLinks: 'http://restlesspoint.com/api/links.jsonp'
   media: 'images'
   # site:
@@ -126,6 +126,32 @@ prose:
           element: "text"
           label: "Permalink"
           value: ""
+    _posts/articles:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "[articles]"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options: "http://restlesspoint.com/api/tags.jsonp"
+          alterable: true
+      - name: "image"
+        - name: "thumb"
+          field:
+            label: "Image thumb"
+            element: "text"
+      - name: "comments"
+        field:
+          label: "Allow comments"
+          element: "checkbox"
+          value: true
     _posts/sailing:
       - name: "layout"
         field:
@@ -142,6 +168,11 @@ prose:
           placeholder: "Choose Tags"
           options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
+      - name: "image"
+        - name: "thumb"
+          field:
+            label: "Image thumb"
+            element: "text"
       - name: "comments"
         field:
           label: "Allow comments"
