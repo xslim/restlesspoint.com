@@ -143,10 +143,9 @@ prose:
           options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
       - name: "image"
-        - name: "thumb"
-          field:
-            label: "Image thumb"
-            element: "text"
+        field:
+          label: "Post Images"
+          element: "textarea"
       - name: "comments"
         field:
           label: "Allow comments"
@@ -169,10 +168,9 @@ prose:
           options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
       - name: "image"
-        - name: "thumb"
-          field:
-            label: "Image thumb"
-            element: "text"
+        field:
+          label: "Post Images"
+          element: "textarea"
       - name: "comments"
         field:
           label: "Allow comments"
