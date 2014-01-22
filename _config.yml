@@ -105,10 +105,10 @@ prose:
           options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
       - name: "comments"
-          field:
-            label: "Allow comments"
-            element: "checkbox"
-            value: true
+        field:
+          label: "Allow comments"
+          element: "checkbox"
+          value: true
     _posts/static:
       - name: "layout"
         field:
@@ -141,7 +141,7 @@ prose:
           options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
       - name: "comments"
-          field:
-            label: "Allow comments"
-            element: "checkbox"
-            value: true
+        field:
+          label: "Allow comments"
+          element: "checkbox"
+          value: true
