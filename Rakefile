@@ -7,7 +7,9 @@ require 'yaml'
 require 'tmpdir'
 require 'jekyll'
 
-deploy_branch  = "gh-pages"
+config[:destination] ||= '_site/'
+config[:sub_content] ||= []
+destination = File.join config[:destination], '/'
 
 def stage_clean?
   system('git', 'diff', '--staged', '--exit-code')
@@ -31,8 +33,16 @@ task :serv do
   system "jekyll serve --watch"
 end
 
-desc "Generate jekyll site"
-task :generate do
+# Usage: rake drafts
+desc "Build Jekyll site with _drafts posts"
+task :drafts do
+  system "jekyll build --drafts --limit_posts 10"
+end # task :drafts
+
+# rake build
+desc 'Generate the site'
+task :build do
+  
   Dir.glob("*/_posts/**/*.md").each do |entry|
     if (File.basename(entry) =~ /^\d{4}-\d{2}-\d{2}-/).nil?
       path = File.dirname(entry)
@@ -41,14 +51,80 @@ task :generate do
       File.rename(entry, "#{path}/#{now}-#{File.basename(entry)}") 
     end
   end
-  system "jekyll"
+  
+  system 'bundle', 'exec', 'jekyll', 'build'
+
+  config[:sub_content].each do |content|
+    repo = content[0]
+    branch = content[1]
+    dir = content[2]
+    rev = content[3]
+    Dir.chdir config[:destination] do
+      FileUtils.mkdir_p dir
+      system "git clone -b #{branch} #{repo} #{dir}"
+      Dir.chdir dir do
+        system "git checkout #{rev}" if rev
+        FileUtils.remove_entry_secure '.git'
+        FileUtils.remove_entry_secure '.nojekyll' if File.exists? '.nojekyll'
+      end if dir
+    end if Dir.exists? config[:destination]
+  end
 end
 
-# Usage: rake drafts
-desc "Build Jekyll site with _drafts posts"
-task :drafts do
-  system "jekyll build --drafts --limit_posts 10"
-end # task :drafts
+
+desc 'Generate site and publish to GitHub Pages.'
+task :ghpages do
+  repo = %x(git config remote.origin.url).strip
+  deploy_branch = repo.match(/github\.io\.git$/) ? 'master' : 'gh-pages'
+  rev = %x(git rev-parse HEAD).strip
+
+  system 'bundle update'
+  system 'bower update'
+
+  Dir.mktmpdir do |dir|
+    system "git clone --branch #{deploy_branch} #{repo.strip} #{dir}"
+    system 'bundle exec rake build'
+    system %Q(rsync -rt --delete-after --exclude=".git" --exclude=".nojekyll" #{destination} #{dir})
+    Dir.chdir dir do
+      system 'git add --all'
+      system "git commit -m 'Built from #{rev}'"
+      system 'git push'
+    end
+  end
+end
+
+desc 'Generate site from Travis CI and publish site to GitHub Pages.'
+task :travis do
+  # if this is a pull request, do a simple build of the site and stop
+  if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
+    puts 'Pull request detected. Executing build only.'
+    system 'bundle exec rake build'
+    next
+  end
+
+  # setup credentials so Travis CI can push to GitHub
+  system "git config user.name '#{ENV['GIT_NAME']}'"
+  system "git config user.email '#{ENV['GIT_EMAIL']}'"
+
+  repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:').strip
+  deploy_url = repo.gsub %r{https://}, "https://#{ENV['GH_TOKEN']}@"
+  deploy_branch = repo.match(/github\.io\.git$/) ? 'master' : 'gh-pages'
+  rev = %x(git rev-parse HEAD).strip
+
+  system "git remote add deploy #{repo}"
+  system "git remote set-branches deploy #{deploy_branch}"
+  system 'git fetch -q deploy'
+  system "git branch #{deploy_branch} deploy/#{deploy_branch}"
+  system 'bundle exec rake build'
+
+  fail "Build failed." unless Dir.exists? destination
+
+  system "git checkout #{deploy_branch}"
+  system %Q(rsync -rt --delete-after --exclude=".git" --exclude=".nojekyll" #{destination} .)
+  system 'git add --all'
+  system "git commit -m 'Built from #{rev}'"
+  system "git push -q #{deploy_url} #{deploy_branch}"
+end
 
 desc "Deploy to gh-pages"
 task :deploy do
@@ -111,4 +187,4 @@ desc 'Notify various services about new content'
 task :notify => [:pingomatic, :sitemapgoogle, :sitemapbing] do
 end
 
-task :default => :generate
+task :default => :build
