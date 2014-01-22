@@ -71,14 +71,13 @@ exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.
 
 # Prose settings
 prose:
-  rooturl: "_posts"
+  rooturl: '_posts'
   siteurl: 'http://restlesspoint.com'
+  relativeLinks: 'http://restlesspoint.com/api/links.jsonp'
   media: 'images'
   site:
       tags: "https://www.healthcare.gov/api/tags.jsonp"
   ignore:
-    - index.md
-    - _config.yml
     - /_layouts
     - /_includes
   metadata:
@@ -96,6 +95,26 @@ prose:
         field:
           element: "text"
           value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
     _posts/sailing:
       - name: "layout"
         field:
@@ -105,3 +124,8 @@ prose:
         field:
           element: "hidden"
           value: "[articles, sailing]"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
