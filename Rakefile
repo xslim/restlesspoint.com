@@ -7,9 +7,6 @@ require 'yaml'
 require 'tmpdir'
 require 'jekyll'
 
-# Load the configuration file
-config = YAML.load_file '_config.yml'
-
 destination = File.join '_site/', '/'
 
 def stage_clean?
