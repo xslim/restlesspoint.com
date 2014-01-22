@@ -80,6 +80,20 @@ prose:
       - /_layouts
       - /_includes
     metadata:
+      _posts:
+        - name: "layout"
+          field:
+            element: "select"
+            label: "Layout type"
+            options: 
+              - name: "post"
+                value: "post"
+              - name: "page"
+                value: "page"
+        - name: "categories"
+          field:
+            element: "text"
+            value: ""
       _posts/sailing:
         - name: "layout"
           field:
