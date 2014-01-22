@@ -75,8 +75,8 @@ prose:
   siteurl: 'http://restlesspoint.com'
   relativeLinks: 'http://restlesspoint.com/api/links.jsonp'
   media: 'images'
-  site:
-      tags: "https://www.healthcare.gov/api/tags.jsonp"
+  # site:
+  #     tags: "https://www.healthcare.gov/api/tags.jsonp"
   ignore:
     - /_layouts
     - /_includes
@@ -97,6 +97,13 @@ prose:
           element: "text"
           label: "Categories"
           value: ""
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options: "https://www.healthcare.gov/api/tags.jsonp"
+          alterable: true
     _posts/static:
       - name: "layout"
         field:
@@ -121,3 +128,10 @@ prose:
         field:
           element: "hidden"
           value: "[articles, sailing]"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options: "https://www.healthcare.gov/api/tags.jsonp"
+          alterable: true
