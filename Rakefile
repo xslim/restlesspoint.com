@@ -10,9 +10,7 @@ require 'jekyll'
 # Load the configuration file
 config = YAML.load_file '_config.yml'
 
-config[:destination] ||= '_site/'
-config[:sub_content] ||= []
-destination = File.join config[:destination], '/'
+destination = File.join '_site/', '/'
 
 def stage_clean?
   system('git', 'diff', '--staged', '--exit-code')
@@ -56,22 +54,6 @@ task :build do
   end
   
   system 'bundle', 'exec', 'jekyll', 'build'
-
-  config[:sub_content].each do |content|
-    repo = content[0]
-    branch = content[1]
-    dir = content[2]
-    rev = content[3]
-    Dir.chdir config[:destination] do
-      FileUtils.mkdir_p dir
-      system "git clone -b #{branch} #{repo} #{dir}"
-      Dir.chdir dir do
-        system "git checkout #{rev}" if rev
-        FileUtils.remove_entry_secure '.git'
-        FileUtils.remove_entry_secure '.nojekyll' if File.exists? '.nojekyll'
-      end if dir
-    end if Dir.exists? config[:destination]
-  end
 end
 
 
