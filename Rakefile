@@ -1,6 +1,5 @@
 require 'rubygems'
 require "bundler/setup"
-require "stringex"
 require 'rake'
 require 'rdoc'
 require 'date'
