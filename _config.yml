@@ -31,7 +31,9 @@ lsi:         false
 pygments:    true
 markdown:    kramdown
 # http://jekyllrb.com/docs/permalinks/
+
 permalink:   /:categories/:title/
+relative_permalinks: false
 
 # Internal pages/posts to include in top navigation
 links:
@@ -67,7 +69,7 @@ kramdown:
     coderay_css: class
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "codekit-config.json", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "Gruntfile.js", "package.json"]
+exclude: ["vendor",".bundle","lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "codekit-config.json", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "Gruntfile.js", "package.json"]
 
 # Prose settings
 prose:
