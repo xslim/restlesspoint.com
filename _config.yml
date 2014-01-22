@@ -102,7 +102,7 @@ prose:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
-          options: "http://restlesspoint/api/tags.jsonp"
+          options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
     _posts/static:
       - name: "layout"
@@ -133,5 +133,5 @@ prose:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
-          options: "http://restlesspoint/api/tags.jsonp"
+          options: "http://restlesspoint.com/api/tags.jsonp"
           alterable: true
