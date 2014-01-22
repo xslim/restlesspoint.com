@@ -6,6 +6,22 @@ require 'yaml'
 require 'tmpdir'
 require 'jekyll'
 
+def stage_clean?
+  system('git', 'diff', '--staged', '--exit-code')
+end
+
+def working_directory_clean?
+  system('git', 'diff', '--exit-code')
+end
+
+def can_switch_branch?
+  return true if working_directory_clean? && stage_clean?
+
+  puts "Aborting: Deploying requires a clean working directory and staging area."
+  puts "  - Commit changes to add them to the compile output."
+  puts "  - `git stash` changes to omit them from compile output."
+  false
+end
 
 desc "Serve"
 task :serv do
@@ -36,7 +52,9 @@ end # task :drafts
 
 
 desc "Push to gh-pages"
-task :push do
+task :push => :generate do
+  return false unless can_switch_branch?
+  
   Dir.mktmpdir do |tmp|
     system "mv _site/* #{tmp}"
     system "cp CNAME #{tmp}"
@@ -44,7 +62,7 @@ task :push do
     system "rm -rf *"
     system "mv #{tmp}/* ."
     message = "Site updated at #{Time.now.utc}"
-    system "git add ."
+    system "git add --all"
     system "git commit -am #{message.shellescape}"
     system "git push origin gh-pages --force"
     system "git checkout master"
