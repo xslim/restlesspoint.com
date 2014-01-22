@@ -7,6 +7,9 @@ require 'yaml'
 require 'tmpdir'
 require 'jekyll'
 
+# Load the configuration file
+config = YAML.load_file '_config.yml'
+
 config[:destination] ||= '_site/'
 config[:sub_content] ||= []
 destination = File.join config[:destination], '/'
