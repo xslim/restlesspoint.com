@@ -1,0 +1,19 @@
+---
+branches:
+  only:
+  - master
+language: ruby
+rvm:
+- 1.9.3
+#before_script:
+#- export REPO_URL="https://$GH_TOKEN@github.com/$GH_REPO.git"
+#- rake setup_github_pages[$REPO_URL]
+script:
+- rake generate
+after_script:
+- rake deploy
+env:
+  global:
+  - GH_REPO="xslim/restlesspoint.com"
+  - secure: "e6RiSdJwt4Ig1wx/KF89/1cjVzolrmHkc+qtvIrZh/kYQ3Ey42Q8JZz/94On0+YO4TvGY3IzcoXJ1qk4FwJ+WLCgCidcvsQLQZwKpjHeb+GWh9X4hwwakKUXh/cgfIQup8YM5N00II7MqFZvBmu3Kxitj1JBr7fP2Jldc/QQ6B0="
+  

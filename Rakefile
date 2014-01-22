@@ -1,10 +1,14 @@
 require 'rubygems'
+require "bundler/setup"
+require "stringex"
 require 'rake'
 require 'rdoc'
 require 'date'
 require 'yaml'
 require 'tmpdir'
 require 'jekyll'
+
+deploy_branch  = "gh-pages"
 
 def stage_clean?
   system('git', 'diff', '--staged', '--exit-code')
@@ -28,7 +32,7 @@ task :serv do
   system "jekyll serve --watch"
 end
 
-desc "Generate blog files"
+desc "Generate jekyll site"
 task :generate do
   Dir.glob("*/_posts/**/*.md").each do |entry|
     if (File.basename(entry) =~ /^\d{4}-\d{2}-\d{2}-/).nil?
@@ -38,10 +42,7 @@ task :generate do
       File.rename(entry, "#{path}/#{now}-#{File.basename(entry)}") 
     end
   end
-  Jekyll::Site.new(Jekyll.configuration({
-    "source"      => ".",
-    "destination" => "_site"
-  })).process
+  system "jekyll"
 end
 
 # Usage: rake drafts
@@ -50,9 +51,8 @@ task :drafts do
   system "jekyll build --drafts --limit_posts 10"
 end # task :drafts
 
-
-desc "Push to gh-pages"
-task :push => :generate do
+desc "Deploy to gh-pages"
+task :deploy do
   return false unless can_switch_branch?
   
   Dir.mktmpdir do |tmp|
@@ -64,7 +64,7 @@ task :push => :generate do
     message = "Site updated at #{Time.now.utc}"
     system "git add --all"
     system "git commit -am #{message.shellescape}"
-    system "git push origin gh-pages --force"
+    system "git push origin gh-pages --force --quiet"
     system "git checkout master"
   end
 end
