@@ -4,10 +4,22 @@ require 'kramdown/converter/html'
 
 class Kramdown::Converter::Html
   
+  def fix_img_path(path)
+    if path.nil? || path[0] == '/'
+      return path
+    end
+    
+    if (path =~ /\/\//).nil?
+      return '/images/' + path
+    end
+    
+    return path
+  end
+  
   def convert_img(el, indent)
     
-    if !el.attr['src'].nil? && el.attr['src'][0] != '/'
-      el.attr['src'] = '/images/' + el.attr['src']
+    if !el.attr['src'].nil?
+      el.attr['src'] = fix_img_path(el.attr['src'])
     end
     
     html_l = ''
@@ -19,7 +31,7 @@ class Kramdown::Converter::Html
         img2 = @stack[1].children[2].attr
         
         if !img2['src'].nil? && img2['src'][0] != '/'
-          img2['src'] = '/images/' + img2['src']
+          img2['src'] = fix_img_path(img2['src'])
         end
         
         if img1['title'] && img1['title'].length > 0 && img2['title'] && img2['title'].length > 0
