@@ -1,13 +1,12 @@
 ---
 layout: page
-permalink: /about/
-title: About
+permalink: /locations/
+title: Locations
 headline: About This Site
-description: "Restless Point is a travel site"
-tags: [travel]
+description: Restless Point is a travel site
+tags: 
+  - travel
+published: true
 ---
 
-### Special thanks to
-
-* [Jekyll](http://jekyllrb.com)
-* [Made Mistakes](http://mademistakes.com)
+Here will be a map
