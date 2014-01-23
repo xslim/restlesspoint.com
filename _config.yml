@@ -37,10 +37,14 @@ relative_permalinks: false
 
 # Internal pages/posts to include in top navigation
 links:
-  - title: Locations
-    url: /locations/
+  - title: Travel
+    url: /travel/
+  - title: Spots
+    url: /spots/
   - title: Articles
     url: /articles/
+  - title: Map
+    url: /map/
   - title: About
     url: /about/
 
@@ -134,7 +138,7 @@ prose:
       - name: "categories"
         field:
           element: "hidden"
-          value: "[articles]"
+          value: "articles"
       - name: "tags"
         field:
           element: "multiselect"
@@ -147,24 +151,4 @@ prose:
           label: "Allow comments"
           element: "checkbox"
           value: true
-    _posts/sailing:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "categories"
-        field:
-          element: "hidden"
-          value: "[articles, sailing]"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/tags.jsonp"
-          alterable: true
-      - name: "comments"
-        field:
-          label: "Allow comments"
-          element: "checkbox"
-          value: true
+
