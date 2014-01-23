@@ -2,10 +2,7 @@
 layout: page
 permalink: /map/
 title: Locations
-headline: About This Site
 description: ""
-tags: 
-  - travel
 published: true
 ---
 
