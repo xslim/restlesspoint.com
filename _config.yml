@@ -193,8 +193,4 @@ prose:
           label: "Allow comments"
           element: "checkbox"
           value: true
-      - name: "image.thumb"
-        field:
-          label: "Image thumb"
-          element: "text"
 
