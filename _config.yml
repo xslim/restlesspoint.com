@@ -98,6 +98,10 @@ prose:
             - name: "page"
               value: "page"
           selected: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "categories"
         field:
           element: "text"
@@ -120,6 +124,10 @@ prose:
         field:
           element: "hidden"
           value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
       - name: "description"
         field:
           element: "text"
