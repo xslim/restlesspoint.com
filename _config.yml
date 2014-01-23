@@ -130,6 +130,48 @@ prose:
           element: "text"
           label: "Permalink"
           value: ""
+    _posts/travel:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "travel"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options: "http://restlesspoint.com/api/tags.jsonp"
+          alterable: true
+      - name: "comments"
+        field:
+          label: "Allow comments"
+          element: "checkbox"
+          value: true
+    _posts/spots:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "categories"
+        field:
+          element: "hidden"
+          value: "spots"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options: "http://restlesspoint.com/api/tags.jsonp"
+          alterable: true
+      - name: "comments"
+        field:
+          label: "Allow comments"
+          element: "checkbox"
+          value: true
     _posts/articles:
       - name: "layout"
         field:
@@ -151,4 +193,8 @@ prose:
           label: "Allow comments"
           element: "checkbox"
           value: true
+      - name: "image"
+        field:
+          label: "Image thumb"
+          element: "text"
 
