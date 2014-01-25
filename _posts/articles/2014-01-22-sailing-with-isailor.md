@@ -1,5 +1,6 @@
 ---
 layout: post
+comments: true
 title: 'Sailing with iSailor'
 date: '2014-01-20'
 description:
