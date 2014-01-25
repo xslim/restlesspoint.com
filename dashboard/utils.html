@@ -94,9 +94,13 @@ function flickr_populateSizes(sizes) {
 
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+<link rel="stylesheet" href="/css/L.Control.Locate.css" />
+<script src="/js/L.Control.Locate.js"></script>
+
     
 <div id="map" style="height: 300px;"></div>
-<span id="mapLocation"></span> Zoom:<span id="mapZoom"></span>
+<pre id="mapLocation"></pre>
 <script type="text/javascript">
 
 var latlng = [51.505, -0.09];
@@ -104,28 +108,49 @@ var map = L.map('map').setView(latlng, 8);
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
-
+// Marker
 var marker = new L.marker(latlng, {draggable:'true'});
+map.addLayer(marker);
+// Controls
+
+L.control.scale().addTo(map);
+
+L.control.locate().addTo(map);
+
+// Overlays
+
+// var baseLayers = {
+//     "OpenStreetMap": osm,
+//     "CloudMade": cloudmade
+// };
+// var overlays = {
+// };
+// L.control.layers(baseLayers, overlays).addTo(map);
+
+
+function positionToCode(p){
+  var t = "map:\n  location: "+p.lat+", "+p.lng+"\n  zoom: "+map.getZoom()+"";
+  $("#mapLocation").text(t);
+}
+
+// Events
 marker.on('dragend', function(e){
         var marker = e.target;
         var position = marker.getLatLng();
         marker.setLatLng(position).update();
-        $("#mapLocation").text(position);
-        $("#mapZoom").text(map.getZoom());
+        positionToCode(position);
 });
-
-map.addLayer(marker);
 
 map.on('click', function(e){
   var position = e.latlng;
   marker.setLatLng(position).update();
-  $("#mapLocation").text(position);
-  $("#mapZoom").text(map.getZoom());
+  positionToCode(position);
 });
 
 map.on('zoomend', function(e){
-  $("#mapZoom").text(map.getZoom());
+  positionToCode(marker.getLatLng());
 });
+
 
 </script>
 

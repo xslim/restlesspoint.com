@@ -8,7 +8,10 @@ author: Taras Kalapun
 categories: [articles, sailing]
 tags: [sailing, iSailor, apps, mobile]
 image:
-  thumb: /images/isailor/isailor.jpg 
+  thumb: /images/isailor/isailor.jpg
+map:
+  location: 52.84259457223949, 5.2789306640625
+  zoom: 9
 ---
 
 As much as I appreciate traditional navigation practices, I like testing modern technologies and being mobile. That is why I prefer using digital charts, atlases and almanacs during my sailing trips and their planning stages. In this short post I will walk through how I use particular apps to plan my route and safely navigate.

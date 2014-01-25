@@ -15,6 +15,9 @@
     </header>
     <div class="entry-wrapper">
       <div class="entry-content" itemprop="articleBody">
+        {% if page.map %}
+        <div id="map" style="height: 200px;"></div>
+        {% endif %}
         {{ content }}
         {% if page.series %}{% include series.html %}{% endif %}
         <hr />
@@ -64,6 +67,22 @@
 </div><!-- /.footer-wrapper -->
 
 {% include scripts.html %}
+
+{% if page.map %}
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+<script type="text/javascript">
+var latlng = [{{page.map.location}}];
+var z = {% if page.map.zoom %}{{page.map.zoom}}{% else %}{{site.map.zoom}}{% endif %};
+//var latlng = L.latLng({{page.map.location}});
+if (L) {
+  var map = L.map('map',{scrollWheelZoom: false}).setView(latlng, z);
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+  }).addTo(map);
+  L.marker(latlng).addTo(map); 
+}
+</script>
+{% endif %}
 
 </body>
 </html>

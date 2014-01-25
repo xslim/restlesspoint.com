@@ -79,6 +79,13 @@ kramdown:
 include: [".htaccess"]
 exclude: ["vendor",".bundle","lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "codekit-config.json", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "Gruntfile.js", "package.json", "atom.xml"]
 
+# Map
+map:
+  type: 'leaflet'
+  zoom: 12
+  map_as_feature: true
+  google_api_key: AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA
+
 # Prose settings
 prose:
   rooturl: '_posts'
