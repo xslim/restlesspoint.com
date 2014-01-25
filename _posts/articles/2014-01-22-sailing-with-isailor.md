@@ -1,4 +1,5 @@
 ---
+layout: post
 title: 'Sailing with iSailor'
 date: '2014-01-20'
 description:
@@ -6,12 +7,12 @@ author: Taras Kalapun
 categories: [articles, sailing]
 tags: [sailing, iSailor, apps, mobile]
 image:
-  thumb: isailor.jpg 
+  thumb: /images/isailor/isailor.jpg 
 ---
 
 As much as I appreciate traditional navigation practices, I like testing modern technologies and being mobile. That is why I prefer using digital charts, atlases and almanacs during my sailing trips and their planning stages. In this short post I will walk through how I use particular apps to plan my route and safely navigate.
 
-![](isailor_p1.jpg)
+![](/images/isailor/isailor_p1.jpg)
 
 *About the Author: I am amateur sailor with under 2000 nautical miles, as well as an accomplished app developer. My opinions reflect my particular experiences on the water and insights in mobile technologies.*
 
@@ -25,37 +26,42 @@ As I mentioned before, I prefer using digital charts. I tried different chart pr
 
 The first step for my sailing trip was to determine the sailing region and buy the needed folios:
 
-![chart_store](isailor_chart_store.png)
+![chart_store](/images/isailor/isailor_chart_store.png)
 
-![>chart_load](isailor_chart_load.png)
 If you already own them, check if there are any updates available before planning a new passage
+
+![chart_load](/images/isailor/isailor_chart_load.png)
 
 ### Route creation
 
 The iSailor has an comprehensive manual on how to use the app and create routes, so I will just highlight a few points on how I do it:
 
-![](isailor_route.png)
+![](/images/isailor/isailor_route.png)
 
 1. Create a new route and give it an appropriate title
 2. Create major waypoints
 3. Zoom in, go along a route and determine turn points 
 
-![](isailor_route_add_middle_wp.png "Add waypoint in between two major points")
-![](isailor_route_move_middle_wp.png "Drag the newly created where needed")
+Add waypoint in between two major points & Drag the newly created where needed:
+
+![](/images/isailor/isailor_route_add_middle_wp.png "Add waypoint in between two major points")
+![](/images/isailor/isailor_route_move_middle_wp.png "Drag the newly created where needed")
 
 And don't forget to note the info about the turning waypoints. Try to plan for day and night passage.
 As example, double tap on the `Safe water buoy` to review its information and note the light characteristics: 
-![](isailor_buoy_sw_details.png)
 
-![>](isailor_route_eta.png)
+![](/images/isailor/isailor_buoy_sw_details.png)
+
 Periodically check the ETA (Estimated Time of Arrival) and route distance in the route information otherwise, you might end up planning a passage that is not possible to do in your timeframe:
 
+![](/images/isailor/isailor_route_eta.png)
 
 A short tip on how to alter the average speed of the route - go to second waypoint, change the speed of the leg and click `Apply to all legs`.
 
 ### Collect information
 You can’t fully rely on electronics, where a dead battery in your iPhone can cause problems if you don’t have a paper back-up of your passage plan. So printed information about the waypoints is a must on your passage. One can use a Google Spreadsheet to collect this information and then print it out so anyone on the watch or helming can understand what to do. It contains a waypoint list and recommended track as below:
-![](isailor_table.png)
+
+![](/images/isailor/isailor_table.png)
  
 So the information I'm looking for about the turn point is:
 
@@ -67,23 +73,28 @@ So the information I'm looking for about the turn point is:
 
 Some of information can be obtained by tapping on the chart or objects:
 
-![](isailor_chart_info.png "Chart info")
-![](isailor_recommended_track.png "Recommended track")
+Chart info & Recommended track:
+
+![](/images/isailor/isailor_chart_info.png "Chart info:")
+![](/images/isailor/isailor_recommended_track.png "Recommended track")
 
 #### Post processing
 I'm quite interested to look on "Next course" after reaching the waypoint and a distance between waypoints. Currently, the iSailor does not have ability to show the course between the waypoints; however it has a powerful ability to export your route in `.gpx` or `.kml` format, which then can be opened in 3-d party apps:
 
-![](isailor_route_export.png "Export")
-![](isailor_route_export_open_in.png "Send to another app")
+Export & Send to another app:
+
+![](/images/isailor/isailor_route_export.png "Export")
+![](/images/isailor/isailor_route_export_open_in.png "Send to another app")
 
 I created a small app, *Waypoint*, to suit my needs. Opening the `.gpx` in it will clearly show the needed for me information:
 
-![](isailor_waypoints.png)
+![](/images/isailor/isailor_waypoints.png)
 
 I hope the iSailor will implement showing this information in their app in near feature :)
 
 ### Have a Plan B
-![>](isailor_route_plan_b.png)
+![](/images/isailor/isailor_route_plan_b.png)
+
 No matter what you plan, have a *Plan B*. And *Plan C* - if needed. It's like planning ports of refugee. For the discussed passage, once we set off, the crew decided that *Plan B* was more practical and interesting passage to make. As there was a fully prepared passage plan for it, we could easily switch. 
 
 ### Tide and streams
@@ -91,44 +102,51 @@ The next big thing to think about - is tides and streams. Check if you have any 
 
 There are few digital sources where one can get tidal information, like web-sites or numerous apps. Some are free, some are cheap and some are quite expensive. For Netherlands there is a website [getij.nl](http://live.getij.nl), or an app [Marine TidesPlanner](https://itunes.apple.com/us/app/marine-tides-planner/id317900837?mt=8) that I use.
 
-![](isailor_tides.png)
+![](/images/isailor/isailor_tides.png)
 
 But after stepping aboard, you should always check the calculations with official Almanac.
 
 *Marine TidesPlanner* can also be used to check the streams:
 
-![](isailor_streams.png)
+![](/images/isailor/isailor_streams.png)
 
 But I prefer looking on stream atlas (if you can find a scanned one for your region):
 
-![](isailor_stream_atlas.png)
+![](/images/isailor/isailor_stream_atlas.png)
 
 ### Weather
 Last, but not least, is to know the weather and plan accordingly. Several sources of weather information are available,  one that I use is [Windfinder](http://windfinder.com). Windfinder app is also available for a mobile user as a [Free](https://itunes.apple.com/us/app/windfinder/id336829635?mt=8) or [Pro](https://itunes.apple.com/us/app/windfinder-pro/id336901296?mt=8) version.
 
 For planning the non-stop passage, I prefer looking on *Superforecast* view (in a *Pro* version), which shows weather per hour, including night hours. In addition, I look on the *wind maps* and [GRIB](http://en.wikipedia.org/wiki/GRIB)s.
 
-![](isailor_weather.png "Weather")
-![](isailor_weather_wind.png "Wind map")
+Weather:
+
+![](/images/isailor/isailor_weather.png "Weather")
+
+Wind map:
+
+![](/images/isailor/isailor_weather_wind.png "Wind map")
 
 
 ## Pilotage
-![](isailor_p3.jpg)
+![](/images/isailor/isailor_p3.jpg)
 
 So you made a plan, gathered a crew, set sails and... you can do the pilotage *old-way* by taking bearings to objects and running into the cabin to check the map, or the *modern-way* by checking your position and bearings using iSailor app. (If you do the latter, I still encourage you to maintain the log and plot the relevant position on a paper chart).
 
 A pilotage is another big reason I choose iSailor as my main navigation software. I really like the *Night mode* it provides along with navigating to a waypoint ability: 
-![](isailor_pilotage_to_wp.png)
+
+![](/images/isailor/isailor_pilotage_to_wp.png)
 
 One can permanently mount iPhone or iPad to the console and enjoy the "always visible" navigation and even record a track. But I prefer keeping the iPhone in my pocket and take it once in a while to check the position or look what's that green buoy I see in a distance. And check the light characteristics if they match the one I see:
 
-![](isailor_pilotage_bearing.png)
-![](isailor_buoy_g_details.png)
+![](/images/isailor/isailor_pilotage_bearing.png)
+![](/images/isailor/isailor_buoy_g_details.png)
 
 Furthermore, I can create a new routes on the fly to check different options where to better navigate or what channel to take.
 
 ## Things to improve
-![](isailor_p2.jpg)
+![](/images/isailor/isailor_p2.jpg)
+
 There are some things I would like to see improved in the app, and other features I would suggest to be added:
 
 - Importing `.gpx` via AirShare
@@ -142,8 +160,6 @@ There are some things I would like to see improved in the app, and other feature
 - Instruments via NMEA
 
 That's all the story for now.  Have a happy sailing with iSailor :)
-
-Written by Taras Kalapun, skipper. Edited by Emily Vernon, crew.
 
 ## Usefull Links
 

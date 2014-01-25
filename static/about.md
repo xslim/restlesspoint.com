@@ -2,8 +2,6 @@
 layout: page
 permalink: /about/
 title: About
-description: Restless Point is a travel site
-published: true
 ---
 
 ## Description
@@ -46,5 +44,5 @@ Have you ever sat at your desk, fidgeting in front of a clock that repetitively 
 
 ### Special thanks to
 
-* [Jekyll](http://jekyllrb.com)
-* [Made Mistakes](http://mademistakes.com)
+* [Jekyll](http://jekyllrb.com) - For generating the site
+* [Made Mistakes](http://mademistakes.com) - For theme inspiration

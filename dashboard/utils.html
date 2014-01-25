@@ -1,0 +1,133 @@
+---
+layout: page
+title: Utils
+permalink: /utils/
+---
+
+<h2>Flickr</h2>
+
+<script type="text/javascript">
+//http://jsfiddle.net/xslim/zMtF8/
+
+var flickr_api_key = "a80bf5179799d078a4cdecd8dd1ae1cf";
+
+function flickr_do(){
+  var photo_id = $("#flickrImageUrl").val();
+  if (photo_id.match(/photos/i)) {
+      photo_id = photo_id.match(/photos\/[^\/]+\/([0-9]+)/m)[1];
+  }
+  flickr_getPhotoInfo(photo_id);
+  flickr_getPhotoSizes(photo_id);
+}
+
+function flickr_getPhotoInfo(photo_id) {
+    var my_url = "http://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=" + flickr_api_key + "&photo_id=" + photo_id + "&format=json&nojsoncallback=1";
+
+    $("#flickrUrl").text(my_url);
+    $.getJSON(my_url, function (json) {
+        flickr_parseInfo(json.photo);
+    });
+}
+
+function flickr_getPhotoSizes(photo_id) {
+    var my_url = "http://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=" + flickr_api_key + "&photo_id=" + photo_id + "&format=json&nojsoncallback=1";
+
+    $("#flickrUrl").text(my_url);
+    $.getJSON(my_url, function (json) {
+        flickr_populateSizes(json.sizes.size);
+    });
+}
+
+function flickr_parseInfo(photo) {
+    var owner = photo.owner.username;
+    var title = photo.title._content;
+    var tags = photo.tags.tag;
+
+    $("#flickrTitle").text(title);
+    $("#flickrOwner").text(owner);
+
+    var tag_values = [];
+
+    for (var index in tags) {
+        var h = tags[index];
+        tag_values.push(h._content);
+    }
+    $("#flickrTags").text(tag_values.join(', '));
+
+
+}
+
+function flickr_populateSizes(sizes) {
+    $("#flickrImage").attr("src", sizes[0].source);
+    var html = $.map(sizes, function (item, i) {
+        return "<tr><td><small>" + item.label + "</small></td><td><small><i>" + item.width + "x" + item.height + "</i></small></td><td><small><code>" + item.source + "</code></small></td></tr>";
+    }).join("");
+
+    $("#flickrTable").empty();
+    $("#flickrTable").append(html);
+}
+</script>
+
+<p>PhotoID or Url:
+    <input id="flickrImageUrl" type="text" style="width:250px;" value="9293264066" />
+    <button type="button" id="flickrButton" onclick="flickr_do()">Fetch</button>
+</p>
+<!--<p id="flickrUrl"></p>-->
+<div>
+    <img id="flickrImage" style="width:75px;height:75px;float:left;margin-right:10px;" />
+    <p> <small>Title: <span id="flickrTitle"></span></small>
+
+        <br /> <small>Tags: <span id="flickrTags"></span></small>
+
+        <br /> <small>Owner: <span id="flickrOwner"></span></small>
+
+        <br />
+    </p>
+</div>
+<table>
+    <tbody id="flickrTable"></tbody>
+</table>
+
+<hr />
+
+<h2>Maps</h2>
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    
+<div id="map" style="height: 250px;"></div>
+
+<script type="text/javascript">
+
+var latlng = [51.505, -0.09];
+var map = L.map('map').setView(latlng, 8);
+// add an OpenStreetMap tile layer
+L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+}).addTo(map);
+
+
+var marker = new L.marker(latlng, {draggable:'true'});
+marker.on('dragend', function(event){
+        var marker = event.target;
+        var position = marker.getLatLng();
+        marker.setLatLng([position]).bindPopup(position).update();
+});
+
+marker.on('click', function(event){
+        var marker = event.target;
+        var position = marker.getLatLng();
+        alert(position);
+});
+
+map.addLayer(marker);
+
+
+function onMapClick(e) {
+
+    marker.setLatLng(e.latlng).update();
+};
+
+map.on('click', onMapClick);
+
+</script>
+
