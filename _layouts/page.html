@@ -6,8 +6,8 @@
 
 <div id="main" role="main">
   <article class="entry" itemscope itemtype="http://schema.org/WebPage">
-    {% if page.image.feature %}<div class="entry-image">
-      <img src="{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" itemprop="image">
+    {% if page.image_feature %}<div class="entry-image">
+      <img src="{{ page.image_feature }}" class="entry-feature-image" alt="{{ page.title }}" itemprop="image">
       {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}" itemprop="citation">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
     </div><!-- /.entry-image -->{% endif %}
     <div class="entry-wrapper">

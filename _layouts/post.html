@@ -7,15 +7,15 @@
 <div id="main" role="main">
   <article class="hentry" itemscope itemtype="http://schema.org/Article">
   <header class="entry-header">
-      {% if page.image.feature %}<div class="entry-image">
-        <img src="{{ page.image.feature }}" class="entry-feature-image" alt="{{ page.title }}" itemprop="image">
+      {% if page.image_feature %}<div class="entry-image">
+        <img src="{{ page.image_feature }}" class="entry-feature-image" alt="{{ page.title }}" itemprop="image">
         {% if page.image.credit %}<div class="image-credit">Image source: <a href="{{ page.image.creditlink }}" itemprop="citation">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
       </div><!-- /.entry-image -->{% endif %}
       <h1 class="entry-title" itemprop="name">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
     </header>
     <div class="entry-wrapper">
       <div class="entry-content" itemprop="articleBody">
-        {% if page.map %}
+        {% if page.location %}
         <div id="map" style="height: 200px;"></div>
         {% endif %}
         {{ content }}
@@ -89,14 +89,15 @@
 
 {% include scripts.html %}
 
-{% if page.map %}
+{% if page.location %}
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 <script type="text/javascript">
-var latlng = [{{page.map.location}}];
-var z = {% if page.map.zoom %}{{page.map.zoom}}{% else %}{{site.map.zoom}}{% endif %};
-//var latlng = L.latLng({{page.map.location}});
 if (L) {
+  var loc = '{{page.location | replace:' ',''}}';
+  var locarr = loc.split(":");
+  var z = (locarr[1]) ? locarr[1] : {{site.map.zoom}};
+  var latlng = locarr[0].split(',');
   var map = L.map('map',{scrollWheelZoom: false}).setView(latlng, z);
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
   }).addTo(map);

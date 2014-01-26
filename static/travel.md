@@ -13,7 +13,7 @@ A travel articles
 	<li>
 		<article itemscope itemtype="http://schema.org/Article">
 			<a href="{{ post.url }}" itemprop="url">
-				{% if post.image.thumb %}<img src="{{ post.image.thumb }}" class="preview" alt="preview image" itemprop="image">{% else %}<img src="/images/{{ site.logo }}" class="preview" alt="preview image" itemprop="image">{% endif %}
+				{% if post.image_thumb %}<img src="{{ post.image_thumb }}" class="preview" alt="preview image" itemprop="image">{% else %}<img src="/images/{{ site.logo }}" class="preview" alt="preview image" itemprop="image">{% endif %}
 				<h1 itemprop="name">{{ post.title }}</h1>
 				<p itemprop="description">{{ post.description }}</p>
 				<p class="entry-meta">

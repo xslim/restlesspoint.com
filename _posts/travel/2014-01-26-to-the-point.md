@@ -5,11 +5,8 @@ published: true
 author: xslim
 comments: true
 title: To the Point
-map: 
-  location: "8.646195681181904, 98.7451171875"
-  zoom: 3
-image: 
-  thumb: "http://farm6.staticflickr.com/5515/12149534656_ea504a2e1a_s.jpg"
+location: "8.646195681181904, 98.7451171875: 3"
+image_thumb: "http://farm6.staticflickr.com/5515/12149534656_ea504a2e1a_s.jpg"
 tags: 
   - travel
   - fun

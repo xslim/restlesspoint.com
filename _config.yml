@@ -86,6 +86,7 @@ map:
   map_as_feature: true
   google_api_key: AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA
 
+
 # Prose settings
 prose:
   rooturl: '_posts'
@@ -99,157 +100,116 @@ prose:
     - /_includes
   metadata:
     _posts:
-      - name: "layout"
+      - &pm_layout
+        name: "layout"
         field:
-          element: "select"
-          label: "Layout type"
-          options: 
-            - name: "post"
-              value: "post"
-            - name: "page"
-              value: "page"
-          selected: "post"
-      - name: "title"
+          element: "hidden"
+          value: "post"
+      - &pm_title
+        name: "title"
         field:
           element: "text"
-          label: "title"
+          label: "Title"
+          placeholder: "Title of a post"
+      - &pm_published
+        name: "published"
+        field:
+          label: "Published"
+          element: "checkbox"
+          value: true
+      - &pm_comments
+        name: "comments"
+        field:
+          label: "Allow comments"
+          element: "checkbox"
+          value: true
+      - &pm_author
+        name: "author"
+        field:
+          element: "select"
+          label: "Author"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
+      - &pm_tags
+        name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options: "http://restlesspoint.com/api/prose/tags.jsonp"
+          alterable: true
+      - &pm_description
+        name: "description"
+        field:
+          element: "textarea"
+          label: "Description"
+          placeholder: "An article description that will be shown on homepage"
+          value: ""
+      - &pm_image_thumb
+        name: "image_thumb"
+        field:
+          element: "text"
+          label: "Image Thumb"
+          placeholder: "will be shown on homepage"
+      - &pm_image_feature
+        name: "image_feature"
+        field:
+          element: "text"
+          label: "Image Feature"
+          placeholder: "will be shown on top of post"
+      - &pm_location
+        name: "location"
+        field:
+          element: "text"
+          label: "Location"
+          placeholder: "lat, lng : zoom"
       - name: "categories"
         field:
           element: "text"
           label: "Categories"
           value: ""
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/prose/tags.jsonp"
-          alterable: true
-      - name: "author"
-        field:
-          element: "select"
-          label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
-      - name: "comments"
-        field:
-          label: "Allow comments"
-          element: "checkbox"
-          value: true
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          value: ""
-    _posts/static:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          value: ""
-      - name: "permalink"
-        field:
-          element: "text"
-          label: "Permalink"
-          value: ""
     _posts/travel:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
+      - *pm_layout
+      - *pm_title
+      - *pm_published
+      - *pm_comments
+      - *pm_author
+      - *pm_tags
+      - *pm_description
+      - *pm_image_thumb
+      - *pm_image_feature
+      - *pm_location
       - name: "categories"
         field:
           element: "hidden"
           value: "travel"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/prose/tags.jsonp"
-          alterable: true
-      - name: "author"
-        field:
-          element: "select"
-          label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
-      - name: "comments"
-        field:
-          label: "Allow comments"
-          element: "checkbox"
-          value: true
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          value: ""
     _posts/spots:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
+      - *pm_layout
+      - *pm_title
+      - *pm_published
+      - *pm_comments
+      - *pm_author
+      - *pm_tags
+      - *pm_description
+      - *pm_image_thumb
+      - *pm_image_feature
+      - *pm_location
       - name: "categories"
         field:
           element: "hidden"
           value: "spots"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/prose/tags.jsonp"
-          alterable: true
-      - name: "author"
-        field:
-          element: "select"
-          label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
-      - name: "comments"
-        field:
-          label: "Allow comments"
-          element: "checkbox"
-          value: true
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          value: ""
     _posts/articles:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
+      - *pm_layout
+      - *pm_title
+      - *pm_published
+      - *pm_comments
+      - *pm_author
+      - *pm_tags
+      - *pm_description
+      - *pm_image_thumb
+      - *pm_image_feature
+      - *pm_location
       - name: "categories"
         field:
           element: "hidden"
           value: "articles"
-      - name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/prose/tags.jsonp"
-          alterable: true
-      - name: "author"
-        field:
-          element: "select"
-          label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
-      - name: "comments"
-        field:
-          label: "Allow comments"
-          element: "checkbox"
-          value: true
-      - name: "description"
-        field:
-          element: "text"
-          label: "Description"
-          value: ""
 
