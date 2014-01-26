@@ -3,25 +3,28 @@ layout: post
 comments: true
 title: 'Sailing with iSailor'
 date: '2014-01-20'
-description:
+description: How to prepare a passage plan with iSailor and other apps.
 author: Taras Kalapun
-categories: [articles, sailing]
+categories: articles
 tags: [sailing, iSailor, apps, mobile]
 image:
   thumb: /images/isailor/isailor.jpg
+  feature: /images/isailor/isailor_feature.jpg
 map:
   location: 52.84259457223949, 5.2789306640625
-  zoom: 9
+  zoom: 8
 ---
 
 As much as I appreciate traditional navigation practices, I like testing modern technologies and being mobile. That is why I prefer using digital charts, atlases and almanacs during my sailing trips and their planning stages. In this short post I will walk through how I use particular apps to plan my route and safely navigate.
 
-![](/images/isailor/isailor_p1.jpg)
-
-*About the Author: I am amateur sailor with under 2000 nautical miles, as well as an accomplished app developer. My opinions reflect my particular experiences on the water and insights in mobile technologies.*
+* TOC
+{:toc}
 
 ## Let's go sailing
+
 I will describe an actual passage I recently made on the *Wadden* and *North Sea* in the Netherlands during November 2013. The passage began Friday night from port *Enkhuizen* and continued to *Kornwerderzand* lock; down to *Harlingen*; through the narrow channels in *Wadden Sea* around *Vlieland* and *Texel* island; to *Den Helder*, where we stopped for few hours during the storm; and back to *Enkhuizen* via the *Den Oever* lock. . It was a non-stop, 165-mile passage that took 2 days and included 27 night hours.
+
+![](/images/isailor/isailor_p1.jpg)
 
 ## Planning the passage
 

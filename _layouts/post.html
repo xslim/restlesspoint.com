@@ -24,7 +24,28 @@
         <div class="entry-meta">
           <meta itemprop="keywords" content="{{ page.tags | join: ', ' }}">
           <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tag/{{ tag | replace:' ','-' | downcase }}/" title="{{ tag }}" class="tag" rel="tag">{{ tag }}</a>{% endfor %}</span>
-          <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person">Published by <span itemprop="name" class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}" itemprop="url">{{ site.owner.name }}</a></span> on </span>
+          
+          {% if page.author %}
+          {% assign author_name = page.author %}
+          {% for writer in site.data.writers %}
+            {% if writer.name == author_name or writer.github == author_name %}
+              {% assign author_name = writer.name %}
+              {% if writer.image %}
+                {% capture author_img %}/images/writers/{{ writer.image }}.jpg{% endcapture %}
+              {% elsif writer.github %}
+                {% capture author_img %}https://github.com/{{ writer.github }}.png{% endcapture %}
+              {% elsif writer.gravatar %}
+                
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+          
+          
+          
+          <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn"><a href="{{ site.url }}/about/" title="About {{author_name}}" itemprop="url">
+            {% if author_img %}<img src="{{ author_img }}" class="image-rounded" style="height: 40px" />{% endif%}
+            {{author_name}}</a></span>, </span>
+          {% endif %}
           <span class="entry-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="published{% unless page.modified %} updated{% endunless %}">{{ page.date | date: "%B %d, %Y" }}</time></span>
           {% if page.modified %} <span class="entry-date">(Updated <time datetime="{{ page.modified }}" itemprop="dateModified" class="updated">{{ page.modified | date: "%m/%d/%Y" }}</time>)</span>{% endif %}
         </div><!-- /.entry-meta -->

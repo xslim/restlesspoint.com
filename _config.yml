@@ -21,7 +21,7 @@ disqus_shortname: restlesspoint
 
 # Owner/author information
 owner:
-  name:           Restlesss Point Authors
+  name:           Restlesss Point
   avatar:         taras-kalapun-photo.jpg
   bio:            
   email:          t@kalapun.com
@@ -30,7 +30,7 @@ owner:
   github:         
   facebook:       
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    "http://plus.google.com/+TarasKalapun"
+  # google_plus:    "http://plus.google.com/+TarasKalapun"
 
 feed: http://feeds.feedburner.com/RestlessPoint
 
@@ -66,7 +66,7 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..2
   use_coderay: true
   
   coderay:
@@ -90,10 +90,10 @@ map:
 prose:
   rooturl: '_posts'
   siteurl: "http://restlesspoint.com"
-  relativeLinks: 'http://restlesspoint.com/api/links.jsonp'
+  relativeLinks: 'http://restlesspoint.com/api/prose/links.jsonp'
   media: 'images'
   # site:
-  #     tags: "https://www.healthcare.gov/api/tags.jsonp"
+  #     tags: "https://www.healthcare.gov/api/prose/tags.jsonp"
   ignore:
     - /_layouts
     - /_includes
@@ -123,13 +123,23 @@ prose:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/tags.jsonp"
+          options: "http://restlesspoint.com/api/prose/tags.jsonp"
           alterable: true
+      - name: "author"
+        field:
+          element: "select"
+          label: "Author"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp"
       - name: "comments"
         field:
           label: "Allow comments"
           element: "checkbox"
           value: true
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
     _posts/static:
       - name: "layout"
         field:
@@ -163,13 +173,23 @@ prose:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/tags.jsonp"
+          options: "http://restlesspoint.com/api/prose/tags.jsonp"
           alterable: true
+      - name: "author"
+        field:
+          element: "select"
+          label: "Author"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp"
       - name: "comments"
         field:
           label: "Allow comments"
           element: "checkbox"
           value: true
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
     _posts/spots:
       - name: "layout"
         field:
@@ -184,13 +204,23 @@ prose:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/tags.jsonp"
+          options: "http://restlesspoint.com/api/prose/tags.jsonp"
           alterable: true
+      - name: "author"
+        field:
+          element: "select"
+          label: "Author"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp"
       - name: "comments"
         field:
           label: "Allow comments"
           element: "checkbox"
           value: true
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
     _posts/articles:
       - name: "layout"
         field:
@@ -205,11 +235,21 @@ prose:
           element: "multiselect"
           label: "Add Tags"
           placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/tags.jsonp"
+          options: "http://restlesspoint.com/api/prose/tags.jsonp"
           alterable: true
+      - name: "author"
+        field:
+          element: "select"
+          label: "Author"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp"
       - name: "comments"
         field:
           label: "Allow comments"
           element: "checkbox"
           value: true
+      - name: "description"
+        field:
+          element: "text"
+          label: "Description"
+          value: ""
 
