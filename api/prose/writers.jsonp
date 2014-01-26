@@ -1,6 +1,6 @@
 ---
 ---
-callback([
+writers([
 {% for writer in site.data.writers %}
 {% assign value = writer.name %}{% if writer.github %}{% assign value = writer.github %}{% endif %}
 {"name": "{{writer.name}}", "value": "{{value}}"}{% unless forloop.last %},{% endunless %}
