@@ -26,7 +26,7 @@
       </header>
       <div class="entry-content">
         <ul class="post-index unstyled-list">
-        {% for post in site.categories.articles limit:15 %}
+        {% for post in site.posts limit:15 %}
         {% assign readtime = post.content | number_of_words | divided_by:200 %}
           <li>
             <article itemscope itemtype="http://schema.org/Article">
