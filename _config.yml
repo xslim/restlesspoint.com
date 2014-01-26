@@ -129,7 +129,7 @@ prose:
         field:
           element: "select"
           label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
       - name: "comments"
         field:
           label: "Allow comments"
@@ -179,7 +179,7 @@ prose:
         field:
           element: "select"
           label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
       - name: "comments"
         field:
           label: "Allow comments"
@@ -210,7 +210,7 @@ prose:
         field:
           element: "select"
           label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
       - name: "comments"
         field:
           label: "Allow comments"
@@ -241,7 +241,7 @@ prose:
         field:
           element: "select"
           label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp"
+          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
       - name: "comments"
         field:
           label: "Allow comments"
