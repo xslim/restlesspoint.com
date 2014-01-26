@@ -1,11 +1,8 @@
 ---
-layout: page
-title: Utils
-permalink: /utils/
+layout: dashboard
+title: Flickr
+permalink: /admin/flickr/
 ---
-
-<h2>Flickr</h2>
-
 <script type="text/javascript">
 //http://jsfiddle.net/xslim/zMtF8/
 
@@ -60,7 +57,7 @@ function flickr_parseInfo(photo) {
 function flickr_populateSizes(sizes) {
     $("#flickrImage").attr("src", sizes[0].source);
     var html = $.map(sizes, function (item, i) {
-        return "<tr><td><small>" + item.label + "</small></td><td><small><i>" + item.width + "x" + item.height + "</i></small></td><td><small><code>" + item.source + "</code></small></td></tr>";
+        return "<tr><td><small>" + item.label + "</small></td><td><small><i>" + item.width + "x" + item.height + "</i></small></td><td><small><code>![](" + item.source + ")</code></small></td></tr>";
     }).join("");
 
     $("#flickrTable").empty();
@@ -87,70 +84,3 @@ function flickr_populateSizes(sizes) {
 <table>
     <tbody id="flickrTable"></tbody>
 </table>
-
-<hr />
-
-<h2>Maps</h2>
-
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-
-<link rel="stylesheet" href="/css/L.Control.Locate.css" />
-<script src="/js/L.Control.Locate.js"></script>
-
-    
-<div id="map" style="height: 300px;"></div>
-<pre id="mapLocation"></pre>
-<script type="text/javascript">
-
-var latlng = [51.505, -0.09];
-var map = L.map('map').setView(latlng, 8);
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-}).addTo(map);
-
-// Marker
-var marker = new L.marker(latlng, {draggable:'true'});
-map.addLayer(marker);
-// Controls
-
-L.control.scale().addTo(map);
-
-L.control.locate().addTo(map);
-
-// Overlays
-
-// var baseLayers = {
-//     "OpenStreetMap": osm,
-//     "CloudMade": cloudmade
-// };
-// var overlays = {
-// };
-// L.control.layers(baseLayers, overlays).addTo(map);
-
-
-function positionToCode(p){
-  var t = "map:\n  location: "+p.lat+", "+p.lng+"\n  zoom: "+map.getZoom()+"";
-  $("#mapLocation").text(t);
-}
-
-// Events
-marker.on('dragend', function(e){
-        var marker = e.target;
-        var position = marker.getLatLng();
-        marker.setLatLng(position).update();
-        positionToCode(position);
-});
-
-map.on('click', function(e){
-  var position = e.latlng;
-  marker.setLatLng(position).update();
-  positionToCode(position);
-});
-
-map.on('zoomend', function(e){
-  positionToCode(marker.getLatLng());
-});
-
-
-</script>
-

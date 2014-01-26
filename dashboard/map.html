@@ -1,0 +1,68 @@
+---
+layout: dashboard
+title: Map
+permalink: /admin/map/
+---
+
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+
+<link rel="stylesheet" href="/css/L.Control.Locate.css" />
+<script src="/js/L.Control.Locate.js"></script>
+
+Location: <code id="mapLocation"></code>
+<hr />
+<div id="map" style="height: 300px;"></div>
+<script type="text/javascript">
+
+var latlng = [51.505, -0.09];
+var map = L.map('map').setView(latlng, 8);
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+}).addTo(map);
+
+// Marker
+var marker = new L.marker(latlng, {draggable:'true'});
+map.addLayer(marker);
+// Controls
+
+L.control.scale().addTo(map);
+
+L.control.locate().addTo(map);
+
+// Overlays
+
+// var baseLayers = {
+//     "OpenStreetMap": osm,
+//     "CloudMade": cloudmade
+// };
+// var overlays = {
+// };
+// L.control.layers(baseLayers, overlays).addTo(map);
+
+
+function positionToCode(p){
+  var t = p.lat+", "+p.lng+" : "+map.getZoom()+"";
+  $("#mapLocation").text(t);
+}
+
+// Events
+marker.on('dragend', function(e){
+        var marker = e.target;
+        var position = marker.getLatLng();
+        marker.setLatLng(position).update();
+        positionToCode(position);
+});
+
+map.on('click', function(e){
+  var position = e.latlng;
+  marker.setLatLng(position).update();
+  positionToCode(position);
+});
+
+map.on('zoomend', function(e){
+  positionToCode(marker.getLatLng());
+});
+
+
+</script>
+

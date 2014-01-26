@@ -44,7 +44,7 @@
           
           <span class="author vcard" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name" class="fn"><a href="{{ site.url }}/about/" title="About {{author_name}}" itemprop="url">
             {% if author_img %}<img src="{{ author_img }}" class="image-rounded" style="height: 40px" />{% endif%}
-            {{author_name}}</a></span>, </span>
+            {{author_name}}</a></span></span> &#8901;
           {% endif %}
           <span class="entry-date"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="published{% unless page.modified %} updated{% endunless %}">{{ page.date | date: "%B %d, %Y" }}</time></span>
           {% if page.modified %} <span class="entry-date">(Updated <time datetime="{{ page.modified }}" itemprop="dateModified" class="updated">{{ page.modified | date: "%m/%d/%Y" }}</time>)</span>{% endif %}

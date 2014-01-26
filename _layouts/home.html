@@ -36,7 +36,7 @@
                 <p itemprop="description">{{ post.description }}</p>
                 </a>
                 <p class="entry-meta">
-                  <span>in <a href="/{{ post.categories.first }}">{{ post.categories.first }}</a>,</span>
+                  <span>in <a href="/{{ post.categories.first }}">{{ post.categories.first | capitalize }}</a></span> &#8901;
                   <span class="entry-date date published"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span>
                 </p><!-- /.entry-meta -->
             </article>
