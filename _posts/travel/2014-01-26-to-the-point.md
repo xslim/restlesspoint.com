@@ -1,7 +1,7 @@
 ---
 categories: travel
 layout: post
-published: false
+published: true
 author: xslim
 comments: true
 title: To the Point
