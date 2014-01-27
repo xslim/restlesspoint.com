@@ -1,15 +1,22 @@
 ---
+categories: articles
 layout: post
 comments: true
-title: 'Sailing with iSailor'
-date: '2014-01-20'
-description: How to prepare a passage plan with iSailor and other apps.
-author: Taras Kalapun
-categories: articles
-tags: [sailing, iSailor, apps, mobile]
+title: Sailing with iSailor
+date: "2014-01-20"
+description: null
+author: 
+  - Taras Kalapun
+  - xslim
+tags: 
+  - sailing
+  - iSailor
+  - apps
+  - mobile
 image_thumb: /images/isailor/isailor.jpg
 image_feature: /images/isailor/isailor_feature.jpg
-location: 52.84259457223949, 5.2789306640625:8
+location: "52.9784158294106, 5.0262451171875 : 8"
+published: true
 ---
 
 As much as I appreciate traditional navigation practices, I like testing modern technologies and being mobile. That is why I prefer using digital charts, atlases and almanacs during my sailing trips and their planning stages. In this short post I will walk through how I use particular apps to plan my route and safely navigate.
@@ -193,5 +200,3 @@ That's all the story for now.  Have a happy sailing with iSailor :)
 
 ### Wikipedia articles
 - [GRIB](http://en.wikipedia.org/wiki/GRIB)
-
-
