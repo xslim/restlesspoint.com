@@ -22,10 +22,9 @@ var latlng = [51.505, -0.09];
 var map = L.map('map').setView(latlng, 8);
 
 var osm = new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
-var ggl = new L.Google('ROADMAP');
-var ggl2 = new L.Google();
-map.addLayer(ggl);
-map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':ggl, 'Google Sat':ggl2}, {}));
+var gmap = new L.Google('ROADMAP');
+map.addLayer(gmap);
+L.Control.Layers( {'OSM':osm, 'Google':gmap}, {}).addTo(map);
 
 
 // Marker
@@ -33,19 +32,9 @@ var marker = new L.marker(latlng, {draggable:'true'});
 map.addLayer(marker);
 // Controls
 
-L.control.scale().addTo(map);
+//L.control.scale().addTo(map);
 
 L.control.locate().addTo(map);
-
-// Overlays
-
-// var baseLayers = {
-//     "OpenStreetMap": osm,
-//     "CloudMade": cloudmade
-// };
-// var overlays = {
-// };
-// L.control.layers(baseLayers, overlays).addTo(map);
 
 
 function positionToCode(p){
