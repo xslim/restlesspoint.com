@@ -30,7 +30,6 @@ var layerdefs = {
 		init: function() {return new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');}},
 	gmap: { name: "Google", js: ["https://raw.github.com/shramov/leaflet-plugins/master/layer/tile/Google.js", "http://maps.google.com/maps/api/js?v=3&sensor=false&callback=L.Google.asyncInitialize"],
 		init: function() {return new L.Google('ROADMAP'); }},
-		init: function() {return new L.Yandex("null", {traffic: true, opacity: 0.8, overlay: true}); }, overlay: true},
 	mso: { name: "Mapsurfer", js: [], overlay: true,
 		init: function() {return new L.TileLayer('http://129.206.74.245:8003/tms_h.ashx?x={x}&y={y}&z={z}');}}
 };
