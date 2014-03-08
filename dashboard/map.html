@@ -33,7 +33,7 @@ var transas = new L.tileLayer('http://wms.transas.com/tms/1.0.0/tx97/{z}/{x}/{y}
         });
 
 map.addLayer(gmap);
-map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':gmap}, {'OpenSeaMap':openseamap}));
+map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':gmap, 'Transas':transas}, {'OpenSeaMap':openseamap}));
 
 
 // Marker
