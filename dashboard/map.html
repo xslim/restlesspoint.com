@@ -8,9 +8,7 @@ permalink: /admin/map/
 <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
 <script src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
-<!-- script src="https://raw.github.com/shramov/leaflet-plugins/master/layer/tile/Google.js"></script -->
-<script src="https://raw.github.com/shramov/leaflet-plugins/master/layer/Layer.Deferred.js"></script>
-
+<script src="https://raw.github.com/shramov/leaflet-plugins/master/layer/tile/Google.js"></script>
 
 <link rel="stylesheet" href="/css/L.Control.Locate.css" />
 <script src="/js/L.Control.Locate.js"></script>
@@ -21,30 +19,13 @@ Location: <code id="mapLocation"></code>
 <script type="text/javascript">
 
 var latlng = [51.505, -0.09];
+var map = L.map('map').setView(latlng, 8);
 
-var map = new L.Map('map', {center: latlng, zoom: 10, zoomAnimation: false });
-var osm = new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png').addTo(map);
-
-var layerdefs = {
-	mapnik: { name: "Mapnik", js: [],
-		init: function() {return new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');}},
-	gmap: { name: "Google", js: ["https://raw.github.com/shramov/leaflet-plugins/master/layer/tile/Google.js", "http://maps.google.com/maps/api/js?v=3&sensor=false&callback=L.Google.asyncInitialize"],
-		init: function() {return new L.Google('ROADMAP'); }},
-	mso: { name: "Mapsurfer", js: [], overlay: true,
-		init: function() {return new L.TileLayer('http://129.206.74.245:8003/tms_h.ashx?x={x}&y={y}&z={z}');}}
-};
-
-var google = new L.DeferredLayer(layerdefs.gmap);
-var mso = new L.DeferredLayer(layerdefs.mso);
-
-L.control.layers(
-  {
-    'OSM':osm,
-    'Google':google,
-  },{
-    'OpenMapSurfer':mso
-  }
-).addTo(map);
+var osm = new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+var ggl = new L.Google('ROADMAP');
+var ggl2 = new L.Google();
+map.addLayer(ggl);
+map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':ggl, 'Google Sat':ggl2}, {}));
 
 
 // Marker
