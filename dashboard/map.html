@@ -22,10 +22,10 @@ var latlng = [51.505, -0.09];
 var map = L.map('map').setView(latlng, 8);
 
 var osm = new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
-var ggl = new L.Google();
-var ggl2 = new L.Google('TERRAIN');
+var ggl = new L.Google('ROADMAP');
+var ggl2 = new L.Google();
 map.addLayer(ggl);
-map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':ggl, 'Google Terrain':ggl2}, {}));
+map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':ggl, 'Google Sat':ggl2}, {}));
 
 
 // Marker
