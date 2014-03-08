@@ -23,7 +23,7 @@ var map = L.map('map').setView(latlng, 8);
 
 var osm = new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
 var gmap = new L.Google('ROADMAP');
-var openseamap = new L.TileLayer('http://{s}.tile.openseamap.org/{z}/{x}/{y}.png');
+var openseamap = new L.TileLayer('http://{s}.tile.openseamap.org/seamark/{z}/{x}/{y}.png');
 
 map.addLayer(gmap);
 map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':gmap}, {'OpenSeaMap':openseamap}));
