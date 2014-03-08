@@ -23,8 +23,10 @@ var map = L.map('map').setView(latlng, 8);
 
 var osm = new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
 var gmap = new L.Google('ROADMAP');
+var openseamap = new L.TileLayer('http://{s}.tile.openseamap.org/{z}/{x}/{y}.png');
+
 map.addLayer(gmap);
-L.Control.Layers( {'OSM':osm, 'Google':gmap}, {}).addTo(map);
+L.Control.Layers( {'OSM':osm, 'Google':gmap}, {'OpenSeaMap':openseamap}).addTo(map);
 
 
 // Marker
