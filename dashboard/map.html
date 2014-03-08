@@ -7,6 +7,9 @@ permalink: /admin/map/
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
 <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
 
+<script src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
+<script src="https://raw.github.com/shramov/leaflet-plugins/master/layer/tile/Google.js"></script>
+
 <link rel="stylesheet" href="/css/L.Control.Locate.css" />
 <script src="/js/L.Control.Locate.js"></script>
 
@@ -17,8 +20,13 @@ Location: <code id="mapLocation"></code>
 
 var latlng = [51.505, -0.09];
 var map = L.map('map').setView(latlng, 8);
-  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-}).addTo(map);
+
+var osm = new L.TileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png');
+var ggl = new L.Google();
+var ggl2 = new L.Google('TERRAIN');
+map.addLayer(ggl);
+map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':ggl, 'Google Terrain':ggl2}, {}));
+
 
 // Marker
 var marker = new L.marker(latlng, {draggable:'true'});
@@ -65,4 +73,3 @@ map.on('zoomend', function(e){
 
 
 </script>
-
