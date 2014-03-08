@@ -26,7 +26,7 @@ var gmap = new L.Google('ROADMAP');
 var openseamap = new L.TileLayer('http://{s}.tile.openseamap.org/{z}/{x}/{y}.png');
 
 map.addLayer(gmap);
-L.Control.Layers( {'OSM':osm, 'Google':gmap}, {'OpenSeaMap':openseamap}).addTo(map);
+map.addControl(new L.Control.Layers( {'OSM':osm, 'Google':gmap}, {'OpenSeaMap':openseamap}));
 
 
 // Marker
