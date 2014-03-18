@@ -25,13 +25,13 @@ We left Enkhuizen at 7 am, did some sailing with different angles to the wind, g
 
 ## Mademblik
 
-![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.112333297729492,52.77187598534763,14/600x200.png)
+![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.112333297729492,52.77187598534763,13/600x200.png)
 
 A nice old city with a beautiful castle. One can observe it while entering the old harbor. Sadly, it was closed inside (. We stopped here for a lunch and managed buying the so-needed pills. After some walking thru the city, the harbormaster gave a tip on Stavoren where to go next.
 
 ## Stavoren
 
-![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.357508659362793,52.88601670622394,14/600x200.png)
+![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.357508659362793,52.88601670622394,13/600x200.png)
 
 It was a fast ride here without changing the course; it took us 2 hours of sailing from Mademblik. As we arrived in old harbor, it was starting getting dark. We did a small walk thru the city but almost all the places were closed. 
 
@@ -39,7 +39,7 @@ Next day we headed towards Enkhuizen to drop one crewmember there, did some smal
 
 ## Urk
 
-![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.596590042114258,52.65930944832587,14/600x200.png)
+![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.596590042114258,52.65930944832587,13/600x200.png)
 
 ![](http://farm3.staticflickr.com/2836/13228876334_d76a6948c5_z.jpg)
 
