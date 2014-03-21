@@ -15,11 +15,15 @@ tags:
 
 Nice weather came, so I've made a decision to do some weekend sailing. While my friend Bogdan was searching for some other crewmembers, I made a boat renting deal with a [Windkracht5](http://www.windkracht5.nl) boat renting company. We ended up 5 total people on [Bavaria 32](http://www.windkracht5.nl/nieuwe-zeilboot-huren-bavaria-32-2.htm). 
 
+## Route
+
+During the trip I've used an [iSailor](http://isailor.us) App for route planning and navigating around, specially in the unknown marinas. Her's the final route one can do:
+
 ![](http://farm8.staticflickr.com/7418/13303664565_98960f39f3.jpg)
 
 _[Download GPX for this trip](https://github.com/xslim/map.mrt.io/raw/master/gpx/Enkhuizen-Mademblik-Stavoren-Urk.gpx)_
 
-After making a short plan in iSailor App we decided to sail off.
+
 
 ## Enkhuizen
 
