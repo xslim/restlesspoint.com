@@ -21,6 +21,8 @@ During the trip I've used an [iSailor](http://isailor.us) App for route planning
 
 ![](http://farm8.staticflickr.com/7418/13303664565_98960f39f3.jpg)
 
+it's around 60 miles round trip.
+
 _[Download GPX for this trip](https://github.com/xslim/map.mrt.io/raw/master/gpx/Enkhuizen-Mademblik-Stavoren-Urk.gpx)_
 
 
