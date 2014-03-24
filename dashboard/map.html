@@ -58,9 +58,9 @@ function positionToCode(p){
   var title = "Map on " +lat+","+lng
 
   var ts = ""
-  ts += "Mapbox: <code>!["+title+"](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/"+lng+","+lat+","+zoom+"/"+size+".png)</code><br>"
-  ts += "Google: <code>!["+title+"](http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lng+"&zoom="+zoom+"&size="+size+"&sensor=false&key=AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA)</code><br>"
-  ts += "Here: <code>!["+title+"](http://m.nok.it/?w=640&h=200&ml=eng&nord&nodot&pip&c="+lat+","+lng+"&z="+zoom+"&f=0)</code><br>"
+  ts += "Mapbox: !["+title+"](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/"+lng+","+lat+","+zoom+"/"+size+".png)\n"
+  ts += "Google: !["+title+"](http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lng+"&zoom="+zoom+"&size="+size+"&sensor=false&key=AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA)\n"
+  ts += "Here: !["+title+"](http://m.nok.it/?w=640&h=200&ml=eng&nord&nodot&pip&c="+lat+","+lng+"&z="+zoom+"&f=0)\n"
   $("#mapLocation").text(t);
   $("#mapStatic").text(ts);
 }
