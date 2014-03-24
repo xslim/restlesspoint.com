@@ -27,7 +27,7 @@ _[Download GPX for this trip](https://github.com/xslim/map.mrt.io/raw/master/gpx
 
 
 
-## Enkhuizen [<i class="fa fa-foursquare">Compagnieshaven</i>](https://foursquare.com/v/compagnieshaven/4beebc952c082d7f65c53042)
+## Enkhuizen [<i class="fa fa-foursquare"></i>](https://foursquare.com/v/compagnieshaven/4beebc952c082d7f65c53042)
 
 ![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.300731658935547,52.70468296296834,13/600x200.png)
 
