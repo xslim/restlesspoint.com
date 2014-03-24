@@ -8,79 +8,168 @@ permalink: /admin/flickr/
 
 var flickr_api_key = "a80bf5179799d078a4cdecd8dd1ae1cf";
 
-function flickr_do(){
-  var photo_id = $("#flickrImageUrl").val();
-  if (photo_id.match(/photos/i)) {
-      photo_id = photo_id.match(/photos\/[^\/]+\/([0-9]+)/m)[1];
-  }
-  flickr_getPhotoInfo(photo_id);
-  flickr_getPhotoSizes(photo_id);
+function el(selector) {
+  return document.querySelector(selector);
 }
+
+function defaultFor(arg, val) { return typeof arg !== 'undefined' ? arg : val }
+
+function getJSON(url, callback) {
+  request = new XMLHttpRequest();
+  request.open('GET', url, true);
+  request.onload = function() {
+    if (this.status >= 200 && this.status < 400){
+      // Success!
+      data = JSON.parse(this.response);
+      callback(data);
+    } else {
+      // We reached our target server, but it returned an error
+
+    }
+  };
+
+  request.onerror = function() {
+    // There was a connection error of some sort
+  };
+
+  request.send();
+}
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+
+function flickr_img_url(id, size, secret, server, farm) {
+  return "http://farm"+farm+".staticflickr.com/"+server+"/"+id+"_"+secret+"_"+size+".jpg"
+}
+
+function flickr_parsePhoto(photo, opts) {
+  opts = defaultFor(opts, {})
+  var title = defaultFor(photo.title._content, photo.title)
+  title = defaultFor(opts.title, title)
+  photo.owner = defaultFor(photo.owner, {})
+  var owner = defaultFor(opts.owner, photo.owner.username)
+
+  var tags = ""
+  if (photo.tags.tag) {
+    tags = photo.tags.tag
+    var tag_values = [];
+    for (var index in tags) {
+        var h = tags[index]
+        tag_values.push(h._content)
+    }
+    tags = tag_values.join(', ')
+  } else {
+    tags = photo.tags
+  }
+
+  var data = {
+    "title": title,
+    "owner": owner,
+    "tags": tags,
+    "url_s": flickr_img_url(photo.id, "s", photo.secret, photo.server, photo.farm),
+    "url_z": flickr_img_url(photo.id, "z", photo.secret, photo.server, photo.farm),
+    "url_o": flickr_img_url(photo.id, "o", photo.originalsecret, photo.server, photo.farm)
+  }
+  return data
+}
+
+function flickr_showPhotos(photos) {
+  var t = ""
+  for (var index in photos) {
+    var photo = photos[index]
+    t += "<tr>"
+    t += '<td><img style="width:75px;height:75px;" src="'+ photo.url_s +'" /></td>'
+    t += "<td>"
+    t += photo.title + " by " + photo.owner + "<br>"
+    t += "<i>" + photo.tags + "</i><br>"
+    t += "<small><code>" + photo.url_s + "</code></small><br>"
+    t += "<small><code>" + photo.url_o + "</code></small><br>"
+    t += "<small><code>![" + photo.title + "](" + photo.url_z + ")</code></small><br>"
+    t += "</td></tr>"
+  }
+
+  el("#flickrTable").innerHTML = t
+
+  if (photos.length > 2) {
+    flickr_showMd(photos)
+  }
+}
+
+function flickr_showMd(photos) {
+  var t = "<code><pre>"
+  for (var i=2;i<photos.length;i++) {
+    photo = photos[i]
+    t += "![" + photo.title + "](" + photo.url_z + ")\n\n"
+  }
+  t += "</pre></code>"
+  el("#flickrMd").innerHTML = t
+}
+
+function flickr_do_q(q) {
+  // 1 - http://www.flickr.com/photos/xslim/sets/72157642834238695/
+  // 2 - http://www.flickr.com/photos/xslim/13376005583/
+
+  if (q.match(/photos\/[^\/]+\/sets\/([0-9]+)/i)) {
+      q = q.match(/photos\/[^\/]+\/sets\/([0-9]+)/m)[1]
+      flickr_photosets_getPhotos(q)
+      return
+  }
+
+  if (q.match(/photos\/[^\/]+\/([0-9]+)/i)) {
+      q = q.match(/photos\/[^\/]+\/([0-9]+)/m)[1]
+  }
+  flickr_getPhotoInfo(q)
+}
+
+function flickr_do() {
+  var photo_id = el("#flickrImageUrl").value
+  flickr_do_q(photo_id);
+}
+
 
 function flickr_getPhotoInfo(photo_id) {
     var my_url = "http://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=" + flickr_api_key + "&photo_id=" + photo_id + "&format=json&nojsoncallback=1";
-
-    $("#flickrUrl").text(my_url);
-    $.getJSON(my_url, function (json) {
-        flickr_parseInfo(json.photo);
-    });
+    getJSON(my_url, function (json) {
+        var data = flickr_parsePhoto(json.photo)
+        flickr_showPhotos([data])
+    })
 }
 
-function flickr_getPhotoSizes(photo_id) {
-    var my_url = "http://api.flickr.com/services/rest/?method=flickr.photos.getSizes&api_key=" + flickr_api_key + "&photo_id=" + photo_id + "&format=json&nojsoncallback=1";
+//https://www.flickr.com/services/api/explore/flickr.photosets.getPhotos
+function flickr_photosets_getPhotos(photoset_id) {
 
-    $("#flickrUrl").text(my_url);
-    $.getJSON(my_url, function (json) {
-        flickr_populateSizes(json.sizes.size);
-    });
+  var extras = "original_format%2Ctags%2Co_dims%2Cpath_alias"
+  var my_url = "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=" + flickr_api_key + "&photoset_id=" + photoset_id + "&extras=" + extras + "&format=json&nojsoncallback=1";
+    getJSON(my_url, function (json) {
+      var photos = json.photoset.photo
+      var info = json.photoset
+      var data = []
+      for (var index in photos) {
+        var photo = photos[index]
+        data.push(flickr_parsePhoto(photo, {owner:info.owner}))
+      }
+      flickr_showPhotos(data)
+
+    })
 }
 
-function flickr_parseInfo(photo) {
-    var owner = photo.owner.username;
-    var title = photo.title._content;
-    var tags = photo.tags.tag;
-
-    $("#flickrTitle").text(title);
-    $("#flickrOwner").text(owner);
-
-    var tag_values = [];
-
-    for (var index in tags) {
-        var h = tags[index];
-        tag_values.push(h._content);
-    }
-    $("#flickrTags").text(tag_values.join(', '));
-
-
+var q = getParameterByName("q")
+if (q) {
+  // console.log("Loading: "+q)
+  flickr_do_q(q)
 }
 
-function flickr_populateSizes(sizes) {
-    $("#flickrImage").attr("src", sizes[0].source);
-    var html = $.map(sizes, function (item, i) {
-        return "<tr><td><small>" + item.label + "</small></td><td><small><i>" + item.width + "x" + item.height + "</i></small></td><td><small><code>![](" + item.source + ")</code></small></td></tr>";
-    }).join("");
-
-    $("#flickrTable").empty();
-    $("#flickrTable").append(html);
-}
 </script>
 
-<p>PhotoID or Url:
+<p>Url:
     <input id="flickrImageUrl" type="text" style="width:250px;" value="9293264066" />
-    <button type="button" id="flickrButton" onclick="flickr_do()">Fetch</button>
+    <button type="button" id="flickrButton" onclick="flickr_do()">Load</button>
 </p>
-<!--<p id="flickrUrl"></p>-->
-<div>
-    <img id="flickrImage" style="width:75px;height:75px;float:left;margin-right:10px;" />
-    <p> <small>Title: <span id="flickrTitle"></span></small>
-
-        <br /> <small>Tags: <span id="flickrTags"></span></small>
-
-        <br /> <small>Owner: <span id="flickrOwner"></span></small>
-
-        <br />
-    </p>
-</div>
 <table>
     <tbody id="flickrTable"></tbody>
 </table>
+<div id="flickrMd"></div>
