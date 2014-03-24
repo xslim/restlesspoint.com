@@ -49,8 +49,18 @@ L.control.locate().addTo(map);
 
 
 function positionToCode(p){
-  var t = p.lat+", "+p.lng+" : "+map.getZoom()+"";
-  var ts = "http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/"+p.lng+","+p.lat+","+map.getZoom()+"/600x200.png";
+  var lng = p.lng
+  var lat = p.lat
+  var zoom = map.getZoom()
+  var size = "640x200"
+
+  var t = lat+", "+lng+" : "+zoom
+  var title = "Map on " +lat+","+lng
+
+  var ts = ""
+  ts += "Mapbox: <code>!["+title+"](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/"+lng+","+lat+","+zoom+"/"+size+".png)</code><br>"
+  ts += "Google: <code>!["+title+"](http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lng+"&zoom="+zoom+"&size="+size+"&sensor=false&key=AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA)</code><br>"
+  ts += "Here: <code>!["+title+"](http://m.nok.it/?w=640&h=200&ml=eng&nord&nodot&pip&c="+lat+","+lng+"&z="+zoom+"&f=0)</code><br>"
   $("#mapLocation").text(t);
   $("#mapStatic").text(ts);
 }
