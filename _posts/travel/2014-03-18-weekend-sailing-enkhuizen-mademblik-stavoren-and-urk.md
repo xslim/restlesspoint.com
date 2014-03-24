@@ -61,7 +61,7 @@ A surprisingly beautiful village! Long time ago, when Ijsselmeer was a sea, this
 
 We had a nice walk around enjoying the view on the old houses, and after dinner, headed towards Enkhuizen enjoying the beautiful sunset and sailing thru the night.
 
-![](http://farm4.staticflickr.com/3743/13228539093_f992afedec_z.jpg)
+[![](http://farm4.staticflickr.com/3743/13228539093_f992afedec_z.jpg)](http://farm4.staticflickr.com/3743/13228539093_f992afedec_b.jpg)
 
 I hope the crew had a nice time and enjoyed the sailing as much as I did and I hope sailing with them again.
 
