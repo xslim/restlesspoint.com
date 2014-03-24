@@ -31,7 +31,7 @@ A beautiful small city. It remind me [Bruges](http://restlesspoint.com/travel/br
 [![City centre](http://farm3.staticflickr.com/2855/13375975893_a1fc294043_z.jpg)](http://farm3.staticflickr.com/2855/13375975893_a1fc294043_b.jpg)
 
 <!-- http://www.flickr.com/photos/xslim/13375832405 -->
-[![City centre](http://farm4.staticflickr.com/3753/13375832405_f56b58b967_m.jpg)](http://farm4.staticflickr.com/3753/13375832405_f56b58b967_b.jpg)
+[![City centre](http://farm4.staticflickr.com/3753/13375832405_f56b58b967.jpg)](http://farm4.staticflickr.com/3753/13375832405_f56b58b967_b.jpg)
 
 And a bunch of churches.
 
