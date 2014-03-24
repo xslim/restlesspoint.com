@@ -25,4 +25,4 @@ Next day, we sailed to a restaurant in a middle of nowhere
 ## Checkpoint Charlie
 ![Map on 52.63528977252829,5.415894985198975](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.415894985198975,52.63528977252829,15/640x200.png)
 
-https://foursquare.com/v/checkpoint-charlie/4c46afbac047be9a714e2e79
+[<i class="fa fa-foursquare"></i>](https://foursquare.com/v/checkpoint-charlie/4c46afbac047be9a714e2e79)
