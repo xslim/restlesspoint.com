@@ -90,7 +90,7 @@ I've mentioned Urk in my previous article [Weekend sailing: Enkhuizen, Mademblik
 It was already night as we saild to Enkhuizen. And a wind direction was not helping at all. The one thing helped me was a nice [Transas map](http://isailor.us) on my iPhone that helped me plan the tacking and avoid the shallow water.
 
 <!-- http://www.flickr.com/photos/xslim/13376227794 -->
-[![Navigating around shallow area near Enkhuizen](http://farm4.staticflickr.com/3831/13376227794_711d67dab6_m.jpg)](http://farm4.staticflickr.com/3831/13376227794_711d67dab6_b.jpg)
+[![Navigating around shallow area near Enkhuizen](http://farm4.staticflickr.com/3831/13376227794_711d67dab6.jpg)](http://farm4.staticflickr.com/3831/13376227794_711d67dab6_b.jpg)
 
 All in all, it was a pleasant 2-day trip, and I hope sailing with a crew more.
 
