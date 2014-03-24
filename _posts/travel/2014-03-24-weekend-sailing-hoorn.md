@@ -31,14 +31,14 @@ A beautiful small city. It remind me [Bruges](http://restlesspoint.com/travel/br
 [![City centre](http://farm3.staticflickr.com/2855/13375975893_a1fc294043_z.jpg)](http://farm3.staticflickr.com/2855/13375975893_a1fc294043_b.jpg)
 
 <!-- http://www.flickr.com/photos/xslim/13375832405 -->
-[![City centre](http://farm4.staticflickr.com/3753/13375832405_f56b58b967_z.jpg)](http://farm4.staticflickr.com/3753/13375832405_f56b58b967_b.jpg)
+[![City centre](http://farm4.staticflickr.com/3753/13375832405_f56b58b967_m.jpg)](http://farm4.staticflickr.com/3753/13375832405_f56b58b967_b.jpg)
 
 And a bunch of churches.
 
 <!-- http://www.flickr.com/photos/xslim/13375967323 -->
 [![Big church in Hoorn](http://farm3.staticflickr.com/2861/13375967323_7b319de5cc_z.jpg)](http://farm3.staticflickr.com/2861/13375967323_7b319de5cc_b.jpg)
 
-One of which had a kid's shop inside :)
+One of which had a kid's store inside :)
 
 <!-- http://www.flickr.com/photos/xslim/13375971943 -->
 [![Kid's shop in a church](http://farm4.staticflickr.com/3671/13375971943_edcd4f05e4_z.jpg)](http://farm4.staticflickr.com/3671/13375971943_edcd4f05e4_b.jpg)
@@ -47,7 +47,7 @@ One of which had a kid's shop inside :)
 [![Kid's shop in a church](http://farm4.staticflickr.com/3806/13376191324_04b39c3dc6_z.jpg)](http://farm4.staticflickr.com/3806/13376191324_04b39c3dc6_b.jpg)
 
 <!-- http://www.flickr.com/photos/xslim/13375822775 -->
-[![Kid's shop in a church](http://farm3.staticflickr.com/2867/13375822775_1e22d62817_z.jpg)](http://farm3.staticflickr.com/2867/13375822775_1e22d62817_b.jpg)
+[![Kid's shop in a church](http://farm3.staticflickr.com/2867/13375822775_1e22d62817_m.jpg)](http://farm3.staticflickr.com/2867/13375822775_1e22d62817_b.jpg)
 
 A nice walking street with a cozy restaurants and caffes:
 
@@ -82,7 +82,7 @@ After having an awesome dinner, crew went playing cards:
 I've mentioned Urk in my previous article [Weekend sailing: Enkhuizen, Mademblik, Stavoren and Urk](http://restlesspoint.com/travel/weekend-sailing-enkhuizen-mademblik-stavoren-and-urk/). This time we visited it again to check the church organ music and just to hang around.
 
 <!-- http://www.flickr.com/photos/xslim/13376005583 -->
-[![Lighthouse in Urk](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_z.jpg)](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_b.jpg)
+[![Lighthouse in Urk](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_m.jpg)](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_b.jpg)
 
 
 ## Back to Enkhuizen
@@ -90,7 +90,7 @@ I've mentioned Urk in my previous article [Weekend sailing: Enkhuizen, Mademblik
 It was already night as we saild to Enkhuizen. And a wind direction was not helping at all. The one thing helped me was a nice [Transas map](http://isailor.us) on my iPhone that helped me plan the tacking and avoid the shallow water.
 
 <!-- http://www.flickr.com/photos/xslim/13376227794 -->
-[![Navigating around shallow area near Enkhuizen](http://farm4.staticflickr.com/3831/13376227794_711d67dab6_z.jpg)](http://farm4.staticflickr.com/3831/13376227794_711d67dab6_b.jpg)
+[![Navigating around shallow area near Enkhuizen](http://farm4.staticflickr.com/3831/13376227794_711d67dab6_m.jpg)](http://farm4.staticflickr.com/3831/13376227794_711d67dab6_b.jpg)
 
 All in all, it was a pleasant 2-day trip, and I hope sailing with a crew more.
 
