@@ -29,29 +29,29 @@ _[Download GPX for this trip](https://github.com/xslim/map.mrt.io/raw/master/gpx
 
 ## Enkhuizen [<i class="fa fa-foursquare"></i>](https://foursquare.com/v/compagnieshaven/4beebc952c082d7f65c53042)
 
-![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.300731658935547,52.70468296296834,13/600x200.png)
+![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.300731658935547,52.70468296296834,13/640x200.png)
 
 The boat I rented was in a small marina on the side of Enkhuizen, a nice city / village on the Ijsselmeer lake, with the easy access by train (a 1 hour train ride from Amsterdam). I've took the boat at 19, did some single-handed parking practice and started waiting for a crew. The crew was a bit late so after short briefing we decided to go to bed early and leave early in the morning. 
 
 We left Enkhuizen at 7 am, did some sailing with different angles to the wind, getting used to the boat and headed towards Mademblik. I also found that 2 crew members were a bit sea sick, so I hoped we'll find some sea-sickness pills on Mademblik.
 
-## Mademblik
+## Mademblik [<i class="fa fa-foursquare"></i>](https://foursquare.com/v/pekelharinghaven/4c42bdbbff711b8d98071405)
 
-![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.112333297729492,52.77187598534763,13/600x200.png)
+![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.112333297729492,52.77187598534763,13/640x200.png)
 
 A nice old city with a beautiful castle. One can observe it while entering the old harbor. Sadly, it was closed inside (. We stopped here for a lunch and managed buying the so-needed pills. After some walking thru the city, the harbormaster gave a tip on Stavoren where to go next.
 
-## Stavoren
+## Stavoren [<i class="fa fa-foursquare"></i>](https://foursquare.com/v/gemeentehaven-stavoren/4c5722d26418a59323af7e0e)
 
-![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.357508659362793,52.88601670622394,13/600x200.png)
+![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.357508659362793,52.88601670622394,13/640x200.png)
 
 It was a fast ride here without changing the course; it took us 2 hours of sailing from Mademblik. As we arrived in old harbor, it was starting getting dark. We did a small walk thru the city but almost all the places were closed. 
 
 Next day we headed towards Enkhuizen to drop one crewmember there, did some small fix on a boat and headed towards Urk.
 
-## Urk
+## Urk [<i class="fa fa-foursquare"></i>](https://foursquare.com/v/vuurtoren-van-urk/4e414744fa7697d3df84de32)
 
-![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.596590042114258,52.65930944832587,13/600x200.png)
+![](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.596590042114258,52.65930944832587,13/640x200.png)
 
 ![](http://farm3.staticflickr.com/2836/13228876334_d76a6948c5_z.jpg)
 
