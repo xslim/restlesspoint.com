@@ -47,7 +47,7 @@ One of which had a kid's store inside :)
 [![Kid's shop in a church](http://farm4.staticflickr.com/3806/13376191324_04b39c3dc6_z.jpg)](http://farm4.staticflickr.com/3806/13376191324_04b39c3dc6_b.jpg)
 
 <!-- http://www.flickr.com/photos/xslim/13375822775 -->
-[![Kid's shop in a church](http://farm3.staticflickr.com/2867/13375822775_1e22d62817_m.jpg)](http://farm3.staticflickr.com/2867/13375822775_1e22d62817_b.jpg)
+[![Kid's shop in a church](http://farm3.staticflickr.com/2867/13375822775_1e22d62817.jpg)](http://farm3.staticflickr.com/2867/13375822775_1e22d62817_b.jpg)
 
 A nice walking street with a cozy restaurants and caffes:
 
@@ -82,7 +82,7 @@ After having an awesome dinner, crew went playing cards:
 I've mentioned Urk in my previous article [Weekend sailing: Enkhuizen, Mademblik, Stavoren and Urk](http://restlesspoint.com/travel/weekend-sailing-enkhuizen-mademblik-stavoren-and-urk/). This time we visited it again to check the church organ music and just to hang around.
 
 <!-- http://www.flickr.com/photos/xslim/13376005583 -->
-[![Lighthouse in Urk](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_m.jpg)](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_b.jpg)
+[![Lighthouse in Urk](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807.jpg)](http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_b.jpg)
 
 
 ## Back to Enkhuizen
