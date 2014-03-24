@@ -66,12 +66,21 @@ function flickr_parsePhoto(photo, opts) {
     tags = photo.tags
   }
 
+  var pathalias = defaultFor(photo.pathalias, photo.owner.path_alias)
+  var url = "http://www.flickr.com/photos/"+pathalias+"/"+photo.id
+
+  if (title == 'image') {
+    title = ""
+  }
+
   var data = {
     "title": title,
     "owner": owner,
     "tags": tags,
+    "url": url,
     "url_s": flickr_img_url(photo.id, "s", photo.secret, photo.server, photo.farm),
     "url_z": flickr_img_url(photo.id, "z", photo.secret, photo.server, photo.farm),
+    "url_b": flickr_img_url(photo.id, "b", photo.secret, photo.server, photo.farm),
     "url_o": flickr_img_url(photo.id, "o", photo.originalsecret, photo.server, photo.farm)
   }
   return data
@@ -82,13 +91,13 @@ function flickr_showPhotos(photos) {
   for (var index in photos) {
     var photo = photos[index]
     t += "<tr>"
-    t += '<td><img style="width:75px;height:75px;" src="'+ photo.url_s +'" /></td>'
+    t += '<td><a href="'+photo.url+'"><img style="width:75px;height:75px;" src="'+ photo.url_s +'" /></b></td>'
     t += "<td>"
     t += photo.title + " by " + photo.owner + "<br>"
     t += "<i>" + photo.tags + "</i><br>"
     t += "<small><code>" + photo.url_s + "</code></small><br>"
     t += "<small><code>" + photo.url_o + "</code></small><br>"
-    t += "<small><code>![" + photo.title + "](" + photo.url_z + ")</code></small><br>"
+    t += "<small><code>[![" + photo.title + "](" + photo.url_z + ")]("+photo.url_b+")</code></small><br>"
     t += "</td></tr>"
   }
 
@@ -100,12 +109,13 @@ function flickr_showPhotos(photos) {
 }
 
 function flickr_showMd(photos) {
-  var t = "<code><pre>"
+  var t = "<pre>"
   for (var i=2;i<photos.length;i++) {
     photo = photos[i]
-    t += "![" + photo.title + "](" + photo.url_z + ")\n\n"
+    t += "<!-- "+ photo.url + " -->\n"
+    t += "[![" + photo.title + "](" + photo.url_z + ")]("+photo.url_b+")\n\n"
   }
-  t += "</pre></code>"
+  t += "</pre>"
   el("#flickrMd").innerHTML = t
 }
 
@@ -150,7 +160,7 @@ function flickr_photosets_getPhotos(photoset_id) {
       var data = []
       for (var index in photos) {
         var photo = photos[index]
-        data.push(flickr_parsePhoto(photo, {owner:info.owner}))
+        data.push(flickr_parsePhoto(photo, {owner:info.ownername}))
       }
       flickr_showPhotos(data)
 
