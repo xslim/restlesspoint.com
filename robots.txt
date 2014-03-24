@@ -1,3 +1,6 @@
+---
+layout: nil
+---
 User-agent: *
 Allow: /
-Sitemap: http://restlesspoint.com/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
