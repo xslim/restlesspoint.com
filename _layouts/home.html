@@ -46,7 +46,10 @@
                       {% endif %}
                     {% endfor %}
                      &#8901; <span>By 
-                       <span itemprop="author">{% if author.gplus %}<a href="https://plus.google.com/{{author.gplus}}?rel=author" />{% endif %}{{author.name}}</span>
+                     <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                      <span itemprop="name">
+                       <span itemprop="author">{% if author.gplus %}<a href="https://plus.google.com/{{author.gplus}}?rel=author" itemprop="url" rel="author" />{% endif %}{{author.name}}</span>
+                      </span>
                      <span>
                   {% endif %}
                 </p><!-- /.entry-meta -->
