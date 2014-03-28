@@ -38,20 +38,6 @@
                 <p class="entry-meta">
                   <span>in <a href="/{{ post.categories.first }}">{{ post.categories.first | capitalize }}</a></span> &#8901;
                   <span class="entry-date date published"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></span>
-                  {% if post.author %}
-                    {% assign author = '' %}
-                    {% for writer in site.data.writers %}
-                      {% if writer.name == post.author or writer.github == post.author %}
-                        {% assign author = writer %}
-                      {% endif %}
-                    {% endfor %}
-                     &#8901; <span>By 
-                     <span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-                      <span itemprop="name">
-                      {% if author.gplus %}<a href="https://plus.google.com/{{author.gplus}}?rel=author" itemprop="url" rel="author" />{% endif %}{{author.name}}
-                      </span>
-                     <span>
-                  {% endif %}
                 </p><!-- /.entry-meta -->
             </article>
           </li>
