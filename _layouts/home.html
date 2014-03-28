@@ -45,8 +45,8 @@
                         {% assign author = writer %}
                       {% endif %}
                     {% endfor %}
-                     &#8901; <span>{% if author.gplus %}<a href="https://plus.google.com/{{author.gplus}}?
-   rel=author" />{% endif %}By {{author.name}}</span>
+                     &#8901; <span>By {% if author.gplus %}<a href="https://plus.google.com/{{author.gplus}}?
+   rel=author" />{% endif %}{{author.name}}</span>
                   {% endif %}
                 </p><!-- /.entry-meta -->
             </article>
