@@ -10,7 +10,7 @@ tags:
   - sailing
   - weekend
 image_thumb: "http://img.mrt.io/flickr/14248218143/s"
-image_feature: "http://img.mrt.io/flickr/14041504787/o"
+image_feature: "http://farm3.staticflickr.com/2934/14041504787_a6b9c5b0ab_o.jpg"
 ---
 
 It was a nice and sunny weekend, so we decided to go for a nice sailing trip from Enkhuizen to Frisland side of the Ijsselmeer. So we took a Bavaria 40 and sailed out at evening from Enkhuizen to Stavooren, arriving at 3:30 in a morning.
@@ -56,4 +56,3 @@ Trying to get thru the racing boys and girls on Optimists, Lasers and other smal
 
 And of course we experienced an amazing sunset
 [![Sunset while sailing](http://img.mrt.io/flickr/14224784041/z)](http://img.mrt.io/flickr/14224784041/b)
-
