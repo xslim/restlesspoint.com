@@ -26,6 +26,7 @@ And while there was not much wind during the weekend, while crew was playing the
 I've made a butterfly sailing for running on the wind, with polling out the jib using a hook and few ropes.
 
 [![Butterfly sailing](http://img.mrt.io/flickr/14041424419)](http://img.mrt.io/flickr/14041424419/b)
+
 [![Jib pole with hook](http://img.mrt.io/flickr/14227858304)](http://img.mrt.io/flickr/14227858304/b)
 
 So her's what we visited so far:
@@ -39,7 +40,9 @@ So her's what we visited so far:
 With a realy nice harbour, wine shop and relaxed people around
 
 [![Hindeloopen](http://img.mrt.io/flickr/14225753692/z)](http://img.mrt.io/flickr/14225753692/b)
+
 [![Wine shop](http://img.mrt.io/flickr/14041463770/z)](http://img.mrt.io/flickr/14041463770/b)
+
 [![Hammock on a boat](http://img.mrt.io/flickr/14041430328/z)](http://img.mrt.io/flickr/14041430328/b)
 
 ## Workum
