@@ -23,13 +23,10 @@ And while there was not much wind during the weekend, while crew was playing the
 
 [![Crew playing Munchkin](http://img.mrt.io/flickr/14204944986/z)](http://img.mrt.io/flickr/14204944986/b)
 
-I've made a butterfly sailing for running on the wind
+I've made a butterfly sailing for running on the wind, with polling out the jib using a hook and few ropes.
 
-[![Butterfly sailing](http://img.mrt.io/flickr/14041424419/z)](http://img.mrt.io/flickr/14041424419/b)
-
-With polling out the jib using a hook and few ropes
-
-[![Jib pole with hook](http://img.mrt.io/flickr/14227858304/z)](http://img.mrt.io/flickr/14227858304/b)
+[![Butterfly sailing](http://img.mrt.io/flickr/14041424419)](http://img.mrt.io/flickr/14041424419/b)
+[![Jib pole with hook](http://img.mrt.io/flickr/14227858304)](http://img.mrt.io/flickr/14227858304/b)
 
 So her's what we visited so far:
 
@@ -39,16 +36,10 @@ So her's what we visited so far:
 ## Hindeloopen
 ![](http://img.mrt.io/map/52.9438423,5.4001649,14)
 
-With a realy nice harbour
+With a realy nice harbour, wine shop and relaxed people around
 
 [![Hindeloopen](http://img.mrt.io/flickr/14225753692/z)](http://img.mrt.io/flickr/14225753692/b)
-
-Wine shop
-
 [![Wine shop](http://img.mrt.io/flickr/14041463770/z)](http://img.mrt.io/flickr/14041463770/b)
-
-And relaxed people around
-
 [![Hammock on a boat](http://img.mrt.io/flickr/14041430328/z)](http://img.mrt.io/flickr/14041430328/b)
 
 ## Workum
