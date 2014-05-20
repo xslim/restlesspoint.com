@@ -17,7 +17,7 @@ It was a nice and sunny weekend, so we decided to go for a nice sailing trip fro
 
 ![](http://img.mrt.io/map/52.7059761,5.495894,9)
 
-[![Evening sailing](http://img.mrt.io/flickr/14041506617/m)](http://img.mrt.io/flickr/14041506617/b)
+[![Evening sailing](http://img.mrt.io/flickr/14041506617)](http://img.mrt.io/flickr/14041506617/b)
 
 And while there was not much wind during the weekend, while crew was playing the Munchkin
 [![Crew playing Munchkin](http://img.mrt.io/flickr/14204944986/z)](http://img.mrt.io/flickr/14204944986/b)
