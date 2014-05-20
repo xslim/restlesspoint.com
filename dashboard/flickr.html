@@ -43,7 +43,8 @@ function getParameterByName(name) {
 }
 
 function flickr_img_url(id, size, secret, server, farm) {
-  return "http://farm"+farm+".staticflickr.com/"+server+"/"+id+"_"+secret+"_"+size+".jpg"
+  //return "http://farm"+farm+".staticflickr.com/"+server+"/"+id+"_"+secret+"_"+size+".jpg"
+  return "http://img.mrt.io/flickr/"+id+"/"+size
 }
 
 function flickr_parsePhoto(photo, opts) {
