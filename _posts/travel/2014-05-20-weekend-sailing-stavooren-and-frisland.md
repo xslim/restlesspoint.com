@@ -15,7 +15,7 @@ image_feature: "http://img.mrt.io/flickr/14041504787/o"
 
 It was a nice and sunny weekend, so we decided to go for a nice sailing trip from Enkhuizen to Frisland side of the Ijsselmeer. So we took a Bavaria 40 and sailed out at evening from Enkhuizen to Stavooren, arriving at 3:30 in a morning.
 
-![](/http://img.mrt.io/map/52.7059761,5.495894,9)
+![](http://img.mrt.io/map/52.7059761,5.495894,9)
 
 [![Evening sailing](http://img.mrt.io/flickr/14041506617/m)](http://img.mrt.io/flickr/14041506617/b)
 
@@ -31,10 +31,10 @@ With polling out the jib using a hook and few ropes
 So her's what we visited so far:
 
 ## Stavooren
-![](/http://img.mrt.io/map/52.8844497,5.3688486,12)
+![](http://img.mrt.io/map/52.8844497,5.3688486,12)
 
 ## Hindeloopen
-![](/http://img.mrt.io/map/52.9438423,5.4001649,14)
+![](http://img.mrt.io/map/52.9438423,5.4001649,14)
 
 With a realy nice harbour
 [![Hindeloopen](http://img.mrt.io/flickr/14225753692/z)](http://img.mrt.io/flickr/14225753692/b)
@@ -46,13 +46,13 @@ And relaxed people around
 [![Hammock on a boat](http://img.mrt.io/flickr/14041430328/z)](http://img.mrt.io/flickr/14041430328/b)
 
 ## Workum
-![](/http://img.mrt.io/map/52.9660957,5.4191454,12)
+![](http://img.mrt.io/map/52.9660957,5.4191454,12)
 
 Trying to get thru the racing boys and girls on Optimists, Lasers and other small crafts
 [![Workum harbor entrance](http://img.mrt.io/flickr/14041505627/z)](http://img.mrt.io/flickr/14041505627/b)
 
 ## Enkhuizen
-![](/http://img.mrt.io/map/52.7001511,5.2974541,12)
+![](http://img.mrt.io/map/52.7001511,5.2974541,12)
 
 And of course we experienced an amazing sunset
 [![Sunset while sailing](http://img.mrt.io/flickr/14224784041/z)](http://img.mrt.io/flickr/14224784041/b)
