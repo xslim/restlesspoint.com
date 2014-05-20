@@ -47,6 +47,11 @@ function flickr_img_url(id, size, secret, server, farm) {
   return "http://img.mrt.io/flickr/"+id+"/"+size
 }
 
+function flickr_orig_img_url(id, size, secret, server, farm) {
+  return "http://farm"+farm+".staticflickr.com/"+server+"/"+id+"_"+secret+"_"+size+".jpg"
+  //return "http://img.mrt.io/flickr/"+id+"/"+size
+}
+
 function flickr_parsePhoto(photo, opts) {
   opts = defaultFor(opts, {})
   var title = defaultFor(photo.title._content, photo.title)
@@ -83,6 +88,7 @@ function flickr_parsePhoto(photo, opts) {
     "url_z": flickr_img_url(photo.id, "z", photo.secret, photo.server, photo.farm),
     "url_b": flickr_img_url(photo.id, "b", photo.secret, photo.server, photo.farm),
     "url_o": flickr_img_url(photo.id, "o", photo.originalsecret, photo.server, photo.farm)
+    "url_oo": flickr_orig_img_url(photo.id, "o", photo.originalsecret, photo.server, photo.farm)
   }
   return data
 }
@@ -98,6 +104,7 @@ function flickr_showPhotos(photos) {
     t += "<i>" + photo.tags + "</i><br>"
     t += "<small><code>" + photo.url_s + "</code></small><br>"
     t += "<small><code>" + photo.url_o + "</code></small><br>"
+    t += "<small><code>" + photo.url_oo + "</code></small><br>"
     t += "<small><code>[![" + photo.title + "](" + photo.url_z + ")]("+photo.url_b+")</code></small><br>"
     t += "</td></tr>"
   }
