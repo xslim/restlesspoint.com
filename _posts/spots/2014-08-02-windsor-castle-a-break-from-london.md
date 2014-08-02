@@ -2,14 +2,15 @@
 categories: spots
 layout: post
 published: true
-title: "Windsor Castle, A Break from London"
+title: Windsor Castle
 comments: true
-author: xslim
+author: emilygv
 description: null
 tags: 
   - travel
   - london
 location: "51.4833, -0.6042"
+image_thumb: "https://farm4.staticflickr.com/3876/14812190352_71cb682ace_s.jpg"
 ---
 
 * TOC
