@@ -20,11 +20,15 @@ image_thumb: "https://farm4.staticflickr.com/3876/14812190352_71cb682ace_s.jpg"
 
 Early on when planning our weekend trip to London, we decided one day would be out of the city. A notion I believed only to a certain degree, where I continued to research museums and galleries in London - just in case. With so much to see in the city, spending an entire day away from the activities, sites and cuisine seemed impractical. What about a Sunday visit to the British Museum, Saatchi Gallery or the V&A? 
 
+[![Castle](http://farm4.staticflickr.com/3876/14812190352_71cb682ace_z.jpg)](http://farm4.staticflickr.com/3876/14812190352_71cb682ace_b.jpg)
+
 Saturday night rolled around and the plan still stood to escape the city. Our requirements included a less than two-hour train ride one-way, an area or town able to see in a single day, a route accessible by public transit, a trip possible without prior bookings and an opportunity to sleeping in until eleven. After narrowing our options to Oxford and Windsor Castle, we made our final decision. 
 
 ## Reasons to Go
 
 Many reasons stand to visit Windsor Castle, even over the cultural destinations in London. The short train ride to the Berkshire town of Windsor transports you to a more sane location, still with tourists of course, but without the big city bustle. To elaborate, Windsor spills charm onto every street; guarantees a lost-free excursion with its size and street signs; fills your extra time with little shops and restaurants and, most importantly, houses one of the most significant estates in England. 
+
+[![Castle](http://farm6.staticflickr.com/5588/14789542596_fe25913b8b_z.jpg)](http://farm6.staticflickr.com/5588/14789542596_fe25913b8b_b.jpg)
 
 Touring Windsor Castle gives any visitor a curated perspective on current, past and even future Britain. To this day, the castle still functions as a royal home and ceremonial hall with over 500 people living and working within its walls. As the longest inhabited castle in the world, almost 1,000 years in use, the castle holds many stories and insights into the royal family. At Windsor Castle, perspectives are also gained on the history of art and architecture. If you pay attention to the castle's interiors and exteriors, the Baroque, Georgian, Gothic, Victorian, Classical, Rococo and Jacobethan references can be identified. And yes, this can all be accomplished in one day with time leftover for a Sunday roast or a little shopping.
 
@@ -37,6 +41,8 @@ Windsor is easily accessible by public transit. The train ride takes under thirt
 The value of a ticket to Windsor Castle supersedes its paid amount. In addition to entry and audio guide, when signed and certified at the end of the tour, the ticket becomes a year-pass. This could be beneficial if certain areas or buildings were closed for the day, which was our case with St. George's Chapel. Though this did not affect our visit, check their website for daily closures before making the train ride to Windsor Castle as it is still a functioning estate. Through our audio guide, we explored the grounds and interior of the castle, which took us 2.5 to 3 hours to complete.
 
 Our visit included a number of unexpected highlights from dollhouses to endless collections of porcelain. Many would dismiss dollhouses as child's play, but not the Queen Mary's Dolls' House. Even my boyfriend admired the fully functioning miniature house with its electricity, hot and cold running water and flushing lavatories. Built by Sir Edwin Lutyens as a replica of an aristocratic home, the dollhouse - if you can really call it that - was properly furnished by leading artists, craftsmen and artists. Its extravagance and quality matched that of the castle and should not be passed over during the tour. 
+
+[![Castle](http://farm4.staticflickr.com/3923/14789553836_ed60c9f392_z.jpg)](http://farm4.staticflickr.com/3923/14789553836_ed60c9f392_b.jpg)
 
 Official entertaining in Windsor Castle requires extensive preparation, time and assistance. Before stepping into St. Georges Hall where the receptions take place, the tour went through an entire room dedicated to the display of royal porcelain dining sets. Each of these magnificent sets was created for a certain occasion and drew from a particular theme. The scale of the collection hinted at the grandeur of the St. Georges Hall banquets. In the 55.5 meter long hall, a single table is set for official dinners. The table seats 160, takes two days to complete and must be perfectly laid out for the Queen's final evaluation. Furthermore, the hall is not only for celebrations, but remembrance. Illustrative shields representing the Knights of the Garter decorate the ceiling and include the blank ones of dismissed knights. St. Georges Hall reinforces the importance of tradition and loyalty through its display and use.
 
