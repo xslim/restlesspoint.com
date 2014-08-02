@@ -6,7 +6,7 @@ permalink: /admin/flickr/
 <script type="text/javascript">
 //http://jsfiddle.net/xslim/zMtF8/
 
-var flickr_api_key = "442113ed66920650e0a8ca1f0d628f08";
+var flickr_api_key = "a80bf5179799d078a4cdecd8dd1ae1cf";
 
 function el(selector) {
   return document.querySelector(selector);
@@ -150,7 +150,7 @@ function flickr_do() {
 
 
 function flickr_getPhotoInfo(photo_id) {
-    var my_url = "http://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=" + flickr_api_key + "&photo_id=" + photo_id + "&format=json&nojsoncallback=1";
+    var my_url = "https://api.flickr.com/services/rest/?method=flickr.photos.getInfo&api_key=" + flickr_api_key + "&photo_id=" + photo_id + "&format=json&nojsoncallback=1";
     getJSON(my_url, function (json) {
         var data = flickr_parsePhoto(json.photo)
         flickr_showPhotos([data])
@@ -161,7 +161,7 @@ function flickr_getPhotoInfo(photo_id) {
 function flickr_photosets_getPhotos(photoset_id) {
 
   var extras = "original_format%2Ctags%2Co_dims%2Cpath_alias"
-  var my_url = "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=" + flickr_api_key + "&photoset_id=" + photoset_id + "&extras=" + extras + "&format=json&nojsoncallback=1";
+  var my_url = "https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&api_key=" + flickr_api_key + "&photoset_id=" + photoset_id + "&extras=" + extras + "&format=json&nojsoncallback=1";
     getJSON(my_url, function (json) {
       var photos = json.photoset.photo
       var info = json.photoset
