@@ -11,7 +11,10 @@ tags:
   - london
 ---
 
-### Introduction
+* TOC
+{:toc}
+
+## Introduction
 
 Early on when planning our weekend trip to London, we decided one day would be out of the city. A notion I believed only to a certain degree, where I continued to research museums and galleries in London - just in case. With so much to see in the city, spending an entire day away from the activities, sites and cuisine seemed impractical. What about a Sunday visit to the British Museum, Saatchi Gallery or the V&A? 
 
@@ -23,11 +26,11 @@ Many reasons stand to visit Windsor Castle, even over the cultural destinations 
 
 Touring Windsor Castle gives any visitor a curated perspective on current, past and even future Britain. To this day, the castle still functions as a royal home and ceremonial hall with over 500 people living and working within its walls. As the longest inhabited castle in the world, almost 1,000 years in use, the castle holds many stories and insights into the royal family. At Windsor Castle, perspectives are also gained on the history of art and architecture. If you pay attention to the castle's interiors and exteriors, the Baroque, Georgian, Gothic, Victorian, Classical, Rococo and Jacobethan references can be identified. And yes, this can all be accomplished in one day with time leftover for a Sunday roast or a little shopping.
 
-### Getting to Windsor
+## Getting to Windsor
 
 Windsor is easily accessible by public transit. The train ride takes under thirty minutes from London Paddington station, costs under 13 pounds for a one-day return and includes a simple switch at Slough. Trains are frequent, every half an hour, and missing the connection does not include any stress. We took the second available train from Slough instead of the first, which gave us enough time to get a coffee, use the restroom and chat before boarding for Windsor. At our final destination, we all filed out of the train and through the station. After a few shopping stops along the way, we continued up Castle Hill to Windsor Castle for our long-awaited tour.
 
-### Castle and Highlights
+## Castle and Highlights
 
 The value of a ticket to Windsor Castle supersedes its paid amount. In addition to entry and audio guide, when signed and certified at the end of the tour, the ticket becomes a year-pass. This could be beneficial if certain areas or buildings were closed for the day, which was our case with St. George's Chapel. Though this did not affect our visit, check their website for daily closures before making the train ride to Windsor Castle as it is still a functioning estate. Through our audio guide, we explored the grounds and interior of the castle, which took us 2.5 to 3 hours to complete.
 
@@ -47,8 +50,8 @@ By the end of the day I was fully convinced leaving the city rounded out the wee
 
 ## Links
 
-http://www.royalcollection.org.uk/visit/windsorcastle
-http://www.firstgreatwestern.co.uk/
+- [Royal Collection: Windsor Castle](http://www.royalcollection.org.uk/visit/windsorcastle "Royal Collection: Windsor Castle")
+- [Train from London to Windsor](http://www.firstgreatwestern.co.uk/ "Train from London to Windsor")
 
 
 
