@@ -9,9 +9,11 @@ module Jekyll
     safe true
  
     def generate(site)
-      File.open(File.join(site.source, 'version.html'), 'w') do |f|
+      filename = 'version.html'
+      File.open(File.join(site.config["destination"], filename), 'w') do |f|
         f.write(generate_report(site))
       end
+      site.pages << Page.new(site, site.dest, '/', filename)
     end
  
     private
