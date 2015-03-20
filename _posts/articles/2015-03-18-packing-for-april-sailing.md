@@ -24,7 +24,7 @@ Here are some details on what you should take along and expect from the trip. Al
 - Clothes:  warm underwear, sturdy jeans, pullover, warm socks, cap(s), gloves (if you have sailing or fitness gloves - bring them along!).
 - Shoes: preferably with rubber sole of a light color (to avoid leaving marks on the boat). If cold weather - maybe boots.
 - Documents: passport or your ID card (as we're planning to go to the North sea)
-- Cushion/pillow/blanket/sleeping bag. If no sleeping bag - a warm blanket. (We will still verify if cushions are maybe available on the boat. If not - many sailors just put some soft clothes in a pillow and so get a cushion).
+- Cushion/pillow/sheet/sleeping bag. If no sleeping bag - a warm blanket. (We will still verify if cushions are maybe available on the boat. If not - many sailors just put some soft clothes in a pillow and so get a cushion).
 - Sunglasses. Polarized are better. Even if not sunny there is a lot of reflection from the water.
 - Suncream. !!!  The skin gets burnt quickly on the water, you don't feel it  with the wind. 
 - Toiletries, towel
