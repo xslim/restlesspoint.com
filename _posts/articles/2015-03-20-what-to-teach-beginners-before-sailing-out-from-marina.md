@@ -21,14 +21,27 @@ Introduce the needed parts of the boat.
 - Port vs Starboard: Start with these terms from the beginning. The easiest saying is "Do you have any port left?" to remember that port is the left side. 
 - Line: Indicate that a line is a rope. We throw, tie, untie, grab, hold and winch lines, so their key for all crew members. 
 - Fenders: A car has fenders - okay had - and so does a boat. They fend off problems and will be needed to come into the boat upon leaving the marina. 
+- Cleat: We fix and release the lines from the cleat, as well as "take lines off" of a cleat. Let them know what that is. 
 
 ## Safety
-- Life Vests:
-- 
-- Watch your hands:
+- Life Vests: Show the crew how to put on and properly fit the life vest. 
+- Man Overboard: If someone falls in the water, this is the proper phrase.
+- Boom: Everyone should watch out for the boom, especially our tall Dutch crew members.
+- Your fingers: They can get easily caught between a line and a cleat or a winch and a line. We want everyone to leave with the number of fingers they came with.
 
-## Commands
-- "Bring in"
+## Your Commands
+- "Bring in the ...": You might say "bring in the line" or "bring in the fender" and clarifying that phrase ahead of time will avoid general confusion. 
+- "Prepare to ...": "Prepare to release the line". To someone new that means nothing. Tell them how to do it properly. 
+- "Release the ...": It mean completely let go of the line from its fixed point on shore or another mooring point. 
+- "Fend off the ...": We say "fend off the boat" if leaving the harbor with a less than perfect result. Tell them how to do it with your hands or a fender.
+
+## Their responses
+- "Clear": If a rope is released and back in the boat, then the crew member says "clear". 
+
+## Rope/Line Basics
+- Check for lines: Before turning on the engine, we should check for lines. It's an easy task for a crew memeber to do.
+- 
+
 ## Knots
 - Fender knot (*XX*) - Beginners need to know how how to tie fenders when you enter the marina. Otherwise you'll need to do a lot of "Fender Over Board" manouvers...
 - Cleet knot (*OXO*) - You want to be shore if you will be parking your boat that a new sailor will properly tie that mooring line you gave him
