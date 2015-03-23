@@ -16,10 +16,12 @@ There's a lot of times I take friends and friends of frends for sailing trips. M
 
 So here's the guide to get them up and running in 30 minutes. 
 
-## The Boat
-Introduce the needed parts of the boat. 
+## Introduction
+- Rolls on a Ship: You are a skipper, and they are the crew. This type of h
+- Commands: Everyone is a bit different and "Bring in the rope" might seem short to some. Indicate why its short and the benefit to running a solid ship.
+
+## The Boat 
 - Port vs Starboard: Start with these terms from the beginning. The easiest saying is "Do you have any port left?" to remember that port is the left side. 
-- Line: Indicate that a line is a rope. We throw, tie, untie, grab, hold and winch lines, so their key for all crew members. 
 - Fenders: A car has fenders - okay had - and so does a boat. They fend off problems and will be needed to come into the boat upon leaving the marina. 
 - Cleat: We fix and release the lines from the cleat, as well as "take lines off" of a cleat. Let them know what that is. 
 
@@ -37,14 +39,15 @@ Introduce the needed parts of the boat.
 
 ## Their responses
 - "Clear": If a rope is released and back in the boat, then the crew member says "clear". 
+- "Ready": When getting ready to cast off, we need to know that each crew member is ready and need to shout it at the needed time. 
 
 ## Rope/Line Basics
+- Line: Indicate that a line is a rope. We throw, tie, untie, grab, hold and winch lines, so their key for all crew members. 
 - Check for lines: Before turning on the engine, we should check for lines. It's an easy task for a crew memeber to do.
-- 
 
 ## Knots
-- Fender knot (*XX*) - Beginners need to know how how to tie fenders when you enter the marina. Otherwise you'll need to do a lot of "Fender Over Board" manouvers...
-- Cleet knot (*OXO*) - You want to be shore if you will be parking your boat that a new sailor will properly tie that mooring line you gave him
+- Rolling Hitch - Beginners need to know how how to tie fenders when you enter the marina. Otherwise you'll need to do a lot of "Fender Over Board" manuovers...
+- Cleet Hitch - You want to be sure if you will be parking your boat that a new sailor will properly tie that mooring line you gave him. XOX is an easy way to remember. 
 
 ## Inside
 
