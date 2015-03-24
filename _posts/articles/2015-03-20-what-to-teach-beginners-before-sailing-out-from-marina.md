@@ -5,7 +5,7 @@ published: true
 title: What to teach beginners before sailing out from marina
 comments: true
 author: emilygv
-description: Lot of times I take total beginners on sailing trip. Here's the guide to get them up and running in 30 minutes. 
+description: null
 tags: 
   - sailing
 image_feature: "http://farm6.staticflickr.com/5615/15608077106_94b4b20075_b.jpg"
@@ -20,6 +20,8 @@ So here's the guide to get them up and running in 30 minutes.
 - _Rolls_ on a Ship: You are a skipper, and they are the crew.
 - _Commands_: Everyone is a bit different and "Bring in the rope" might seem short to some. Indicate why its short and the benefit to running a solid ship.
 - _Crew_: Know your crew. Ask who can't swim, who will be just looking around and who will help you.
+
+![](/http://farm4.staticflickr.com/3932/15669888725_9b2e11f9c5_z.jpg)
 
 ## The Boat 
 - _Port_ vs _Starboard_: Start with these terms from the beginning. The easiest saying is "_Do you have any port left?_" to remember that port is the left side. 
