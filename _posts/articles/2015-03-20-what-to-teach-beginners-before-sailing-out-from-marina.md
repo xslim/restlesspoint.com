@@ -21,7 +21,7 @@ So here's the guide to get them up and running in 30 minutes.
 - _Commands_: Everyone is a bit different and "Bring in the rope" might seem short to some. Indicate why its short and the benefit to running a solid ship.
 - _Crew_: Know your crew. Ask who can't swim, who will be just looking around and who will help you.
 
-![](/http://farm4.staticflickr.com/3932/15669888725_9b2e11f9c5_z.jpg)
+![](http://farm4.staticflickr.com/3932/15669888725_9b2e11f9c5_z.jpg)
 
 ## The Boat 
 - _Port_ vs _Starboard_: Start with these terms from the beginning. The easiest saying is "_Do you have any port left?_" to remember that port is the left side. 
@@ -34,7 +34,7 @@ So here's the guide to get them up and running in 30 minutes.
 - _Boom_: Everyone should watch out for the boom, especially our tall Dutch crew members.
 - _Your fingers_: They can get easily caught between a line and a cleat or a winch and a line. We want everyone to leave with the number of fingers they came with.
 
-![](/http://farm4.staticflickr.com/3727/12149398973_5480207542_z.jpg)
+![](http://farm4.staticflickr.com/3727/12149398973_5480207542_z.jpg)
 
 ## Your Commands
 - "_Bring in the ..._": You might say "bring in the line" or "bring in the fender" and clarifying that phrase ahead of time will avoid general confusion. 
@@ -46,7 +46,7 @@ So here's the guide to get them up and running in 30 minutes.
 - "_Clear_": If a rope is released and back in the boat, then the crew member says "clear". 
 - "_Ready_": When getting ready to cast off, we need to know that each crew member is ready and need to shout it at the needed time. 
 
-![](/http://farm4.staticflickr.com/3947/15011566633_0078e9cc25_z.jpg)
+![](http://farm4.staticflickr.com/3947/15011566633_0078e9cc25_z.jpg)
 
 ## Rope/Line Basics
 - _Line_: Indicate that a line is a rope. Sheet is also. We throw, tie, untie, grab, hold and winch lines, so their key for all crew members. 
