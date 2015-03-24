@@ -1,7 +1,7 @@
 ---
 categories: articles
 layout: post
-published: false
+published: true
 title: What to teach beginners before sailing out from marina
 comments: true
 author: emilygv
