@@ -19,6 +19,7 @@ So here's the guide to get them up and running in 30 minutes.
 ## Introduction
 - _Rolls_ on a Ship: You are a skipper, and they are the crew.
 - _Commands_: Everyone is a bit different and "Bring in the rope" might seem short to some. Indicate why its short and the benefit to running a solid ship.
+- _Crew_: Know your crew. Ask who can't swim, who will be just looking around and who will help you.
 
 ## The Boat 
 - _Port_ vs _Starboard_: Start with these terms from the beginning. The easiest saying is "_Do you have any port left?_" to remember that port is the left side. 
