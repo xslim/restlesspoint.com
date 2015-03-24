@@ -5,7 +5,7 @@ published: true
 title: What to teach beginners before sailing out from marina
 comments: true
 author: emilygv
-description: Lot of times I take total beginners on sailing trip. Here's the guide to get them up and running in 30 minutes.
+description: "Lot of times I take total beginners on sailing trip. Here's the guide to get them up and running in 30 minutes."
 tags: 
   - sailing
 image_feature: "http://farm6.staticflickr.com/5615/15608077106_94b4b20075_b.jpg"
@@ -33,6 +33,11 @@ So here's the guide to get them up and running in 30 minutes.
 - _Man Overboard_: If someone falls in the water, this is the proper phrase to shout.
 - _Boom_: Everyone should watch out for the boom, especially our tall Dutch crew members.
 - _Your fingers_: They can get easily caught between a line and a cleat or a winch and a line. We want everyone to leave with the number of fingers they came with.
+- Stepping on/off board, holding the rigging
+- While onboard: one hand for yourself another one for the boat  (hold on well)
+- Move on the deck - keep low when it can if there are waves
+- Slippery deck danger
+- Importance of not falling into the water and how to behave if it happens
 
 ![](http://farm4.staticflickr.com/3727/12149398973_5480207542_z.jpg)
 
@@ -59,6 +64,10 @@ So here's the guide to get them up and running in 30 minutes.
 ## Inside
 - _Gas switch_ - Show how to turn it on and stress to turn it off when not in use.
 - _Toilet_ - Show how to use it. Stress not to throw stuff in it.
+- Show where the fire extinguisher is, the medical kit, where the safety items are
 - _Light switches_ - Show where the motoring light switch is
+
+## Preparing for departure:
+Close the hatches, secure all moving parts/loose items/personal items
 
 [![](http://farm6.staticflickr.com/5611/15447196308_94d658110a_z.jpg)](http://farm6.staticflickr.com/5611/15447196308_94d658110a_b.jpg)
