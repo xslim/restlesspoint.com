@@ -34,6 +34,8 @@ So here's the guide to get them up and running in 30 minutes.
 - _Boom_: Everyone should watch out for the boom, especially our tall Dutch crew members.
 - _Your fingers_: They can get easily caught between a line and a cleat or a winch and a line. We want everyone to leave with the number of fingers they came with.
 
+![](/http://farm4.staticflickr.com/3727/12149398973_5480207542_z.jpg)
+
 ## Your Commands
 - "_Bring in the ..._": You might say "bring in the line" or "bring in the fender" and clarifying that phrase ahead of time will avoid general confusion. 
 - "_Prepare to ..._": "Prepare to release the line". To someone new that means nothing. Tell them how to do it properly. 
@@ -43,6 +45,8 @@ So here's the guide to get them up and running in 30 minutes.
 ## Their responses
 - "_Clear_": If a rope is released and back in the boat, then the crew member says "clear". 
 - "_Ready_": When getting ready to cast off, we need to know that each crew member is ready and need to shout it at the needed time. 
+
+![](/http://farm4.staticflickr.com/3947/15011566633_0078e9cc25_z.jpg)
 
 ## Rope/Line Basics
 - _Line_: Indicate that a line is a rope. Sheet is also. We throw, tie, untie, grab, hold and winch lines, so their key for all crew members. 
