@@ -5,7 +5,7 @@ published: true
 title: What to teach beginners before sailing out from marina
 comments: true
 author: emilygv
-description: There's a lot of times I take friends and friends of frends for sailing trips. Most of the times they are total beginners in sailing and the basics need to be taught on-the-go. Here's the guide to get them up and running in 30 minutes. 
+description: Lot of times I take total beginners on sailing trip. Here's the guide to get them up and running in 30 minutes. 
 tags: 
   - sailing
 image_feature: "http://farm6.staticflickr.com/5615/15608077106_94b4b20075_b.jpg"
