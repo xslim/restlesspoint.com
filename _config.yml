@@ -8,7 +8,7 @@ url:              http://restlesspoint.com
 safe:        true
 future:      true
 lsi:         false
-highlighter: true
+pygments:    true
 markdown:    kramdown
 # http://jekyllrb.com/docs/permalinks/
 
