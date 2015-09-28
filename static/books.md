@@ -18,7 +18,7 @@ a_tag: personblog000-20
   <li>
     <div>
       <a href="{{ url }}" itemprop="url">
-      <img src="{{ img }}" class="thumb" alt="{{ book.name }}" />
+      <img src="{{ img }}" width="50" class="thumb" alt="{{ book.name }}" />
       <h4 itemprop="name">{{ book.name }}</h4>
       {% if book.description %}<p>{{ book.description }}</p>{% endif %}
       </a>
