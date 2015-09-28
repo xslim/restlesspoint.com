@@ -325,6 +325,13 @@ button {
           border-radius: 50px;
 }
 
+.unstyled-list .thumb {
+  float: left;
+  margin-left: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (min-width: 48em) {
   .unstyled-list .preview {
     float: left;

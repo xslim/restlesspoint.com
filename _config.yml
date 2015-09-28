@@ -8,7 +8,7 @@ url:              http://restlesspoint.com
 safe:        true
 future:      true
 lsi:         false
-pygments:    true
+highlighter: true
 markdown:    kramdown
 # http://jekyllrb.com/docs/permalinks/
 
@@ -23,20 +23,20 @@ disqus_shortname: restlesspoint
 owner:
   name:           Restlesss Point
   avatar:         taras-kalapun-photo.jpg
-  bio:            
+  bio:
   email:          t@kalapun.com
-  twitter:        
-  instagram:      
-  github:         
-  facebook:       
+  twitter:
+  instagram:
+  github:
+  facebook:
   # For Google Authorship https://plus.google.com/authorship
   # google_plus:    "http://plus.google.com/+TarasKalapun"
 
 feed: http://feeds.feedburner.com/RestlessPoint
 
 google_analytics: UA-2087894-20
-google_verify: 
-bing_verify:   
+google_verify:
+bing_verify:
 alexa_verify:
 
 # Internal pages/posts to include in top navigation
@@ -68,9 +68,9 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..2
   use_coderay: true
-  
+
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
@@ -212,4 +212,3 @@ prose:
         field:
           element: "hidden"
           value: "articles"
-
