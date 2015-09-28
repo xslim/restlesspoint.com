@@ -7,7 +7,5 @@ tags: [books, recomendations]
 ---
 
 <ul class="post-index unstyled-list">
-{% for book in site.data.books %}
 
-{% endfor %}
 </ul>
