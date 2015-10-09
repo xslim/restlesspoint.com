@@ -1,11 +1,17 @@
-- name: "The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing"
-  asin: 1607747308
-- name: "The 4-Hour Chef: The Simple Path to Cooking Like a Pro, Learning Anything, and Living the Good Life"
-  asin: B005NJU8PA
-- name: "Storm Tactics: Modern Methods of Heaving-to for Survival in Extreme Conditions"
-  asin: B00E1JR3P6
-- name: "The Voyager's Handbook: The Essential Guide to Blue Water Cruising"
-  asin: B0072UO1VA
-- name: "Total Recall: My Unbelievably True Life Story by Arnold Schwarzenegger"
-  asin: B006VGGAC4
-  description: "This book is an autobiography of Arnold Schwarzenegger and was published in November 2013. Whether you are or not a fan of Arnold I consider this book a must read for any person that wants not only to be a goal setter but also to accomplish his/her goals. Arnold is one of the few people who managed to set high goals and accomplish every one of them."
+- name: Practical
+  books:
+    - name: "The 4-Hour Chef: The Simple Path to Cooking Like a Pro, Learning Anything, and Living the Good Life"
+      asin: B005NJU8PA
+    - name: "The Life-Changing Magic of Tidying Up: The Japanese Art of Decluttering and Organizing"
+      asin: 1607747308  
+- name: Sailing
+  books:
+    - name: "Storm Tactics: Modern Methods of Heaving-to for Survival in Extreme Conditions"
+      asin: B00E1JR3P6
+    - name: "The Voyager's Handbook: The Essential Guide to Blue Water Cruising"
+      asin: B0072UO1VA
+- name: Other
+  books:
+    - name: "Total Recall: My Unbelievably True Life Story by Arnold Schwarzenegger"
+      asin: B006VGGAC4
+      description: "This book is an autobiography of Arnold Schwarzenegger and was published in November 2013. Whether you are or not a fan of Arnold I consider this book a must read for any person that wants not only to be a goal setter but also to accomplish his/her goals. Arnold is one of the few people who managed to set high goals and accomplish every one of them."
