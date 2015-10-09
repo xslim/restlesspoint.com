@@ -7,8 +7,11 @@ tags: [books, recomendations]
 a_tag: personblog000-20
 ---
 
+{% for bookcat in site.data.books %}
+<h2>{{ bookcat.name }}</h2>
+
 <ul class="post-index unstyled-list">
-{% for book in site.data.books %}
+{% for book in bookcat.books %}
 {% assign url = book.url %}
 {% assign img = book.image %}
 {% if book.asin %}
@@ -26,3 +29,5 @@ a_tag: personblog000-20
   </li>
 {% endfor %}
 </ul>
+
+{% endfor %}
