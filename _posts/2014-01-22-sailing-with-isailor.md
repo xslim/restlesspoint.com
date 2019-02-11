@@ -1,12 +1,8 @@
 ---
 categories: articles
-layout: post
-comments: true
 title: Sailing with iSailor
-date: "2014-01-20"
-description: null
 author: xslim
-tags: 
+tags:
   - sailing
   - iSailor
   - apps
@@ -14,7 +10,6 @@ tags:
 image_thumb: /images/isailor/isailor.jpg
 image_feature: /images/isailor/isailor_feature.jpg
 location: "52.9784158294106, 5.0262451171875 : 8"
-published: true
 ---
 
 As much as I appreciate traditional navigation practices, I like testing modern technologies and being mobile. That is why I prefer using digital charts, atlases and almanacs during my sailing trips and their planning stages. In this short post I will walk through how I use particular apps to plan my route and safely navigate.
@@ -49,7 +44,7 @@ The iSailor has an comprehensive manual on how to use the app and create routes,
 
 1. Create a new route and give it an appropriate title
 2. Create major waypoints
-3. Zoom in, go along a route and determine turn points 
+3. Zoom in, go along a route and determine turn points
 
 Add waypoint in between two major points & Drag the newly created where needed:
 
@@ -57,7 +52,7 @@ Add waypoint in between two major points & Drag the newly created where needed:
 ![](/images/isailor/isailor_route_move_middle_wp.png "Drag the newly created where needed")
 
 And don't forget to note the info about the turning waypoints. Try to plan for day and night passage.
-As example, double tap on the `Safe water buoy` to review its information and note the light characteristics: 
+As example, double tap on the `Safe water buoy` to review its information and note the light characteristics:
 
 ![](/images/isailor/isailor_buoy_sw_details.png)
 
@@ -71,7 +66,7 @@ A short tip on how to alter the average speed of the route - go to second waypoi
 You can’t fully rely on electronics, where a dead battery in your iPhone can cause problems if you don’t have a paper back-up of your passage plan. So printed information about the waypoints is a must on your passage. One can use a Google Spreadsheet to collect this information and then print it out so anyone on the watch or helming can understand what to do. It contains a waypoint list and recommended track as below:
 
 ![](/images/isailor/isailor_table.png)
- 
+
 So the information I'm looking for about the turn point is:
 
 - What we will see there
@@ -104,10 +99,10 @@ I hope the iSailor will implement showing this information in their app in near 
 ### Have a Plan B
 ![](/images/isailor/isailor_route_plan_b.png)
 
-No matter what you plan, have a *Plan B*. And *Plan C* - if needed. It's like planning ports of refugee. For the discussed passage, once we set off, the crew decided that *Plan B* was more practical and interesting passage to make. As there was a fully prepared passage plan for it, we could easily switch. 
+No matter what you plan, have a *Plan B*. And *Plan C* - if needed. It's like planning ports of refugee. For the discussed passage, once we set off, the crew decided that *Plan B* was more practical and interesting passage to make. As there was a fully prepared passage plan for it, we could easily switch.
 
 ### Tide and streams
-The next big thing to think about - is tides and streams. Check if you have any *tidal gates* in your plan, as like passing under the bridge or over a drying area, they could impact the timing of a passage. The *tidal gate* in discussed passage was to cross the *Wadden Sea* on High Water and to sail from *Texel* island to *Den Helder* with a current. 
+The next big thing to think about - is tides and streams. Check if you have any *tidal gates* in your plan, as like passing under the bridge or over a drying area, they could impact the timing of a passage. The *tidal gate* in discussed passage was to cross the *Wadden Sea* on High Water and to sail from *Texel* island to *Den Helder* with a current.
 
 There are few digital sources where one can get tidal information, like web-sites or numerous apps. Some are free, some are cheap and some are quite expensive. For Netherlands there is a website [getij.nl](http://live.getij.nl), or an app [Marine TidesPlanner](https://itunes.apple.com/us/app/marine-tides-planner/id317900837?mt=8) that I use.
 
@@ -142,7 +137,7 @@ Wind map:
 
 So you made a plan, gathered a crew, set sails and... you can do the pilotage *old-way* by taking bearings to objects and running into the cabin to check the map, or the *modern-way* by checking your position and bearings using iSailor app. (If you do the latter, I still encourage you to maintain the log and plot the relevant position on a paper chart).
 
-A pilotage is another big reason I choose iSailor as my main navigation software. I really like the *Night mode* it provides along with navigating to a waypoint ability: 
+A pilotage is another big reason I choose iSailor as my main navigation software. I really like the *Night mode* it provides along with navigating to a waypoint ability:
 
 ![](/images/isailor/isailor_pilotage_to_wp.png)
 

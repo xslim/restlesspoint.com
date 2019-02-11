@@ -1,12 +1,8 @@
 ---
 categories: travel
-layout: post
-published: true
 title: "Weekend Sailing: Stavooren and Frisland"
-comments: true
 author: xslim
-description: null
-tags: 
+tags:
   - sailing
   - weekend
 image_thumb: "http://img.mrt.io/flickr/14248218143/s"

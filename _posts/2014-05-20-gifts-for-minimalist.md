@@ -1,17 +1,13 @@
 ---
 categories: articles
-layout: post
-published: true
 title: Gifts for minimalist
-comments: true
 author: xslim
-description: null
 image_thumb: "http://img.mrt.io/flickr/4393262126/s"
-tags: 
+tags:
   - gift
 ---
 
-Here's a list of 10 things one might gift to a minimalist for their birthday or a special occasion. Minimalists look to gain experiences over items. The below reflect this notion, where many minimalists enjoy and appreciate even activities outside of our comfort zone. 
+Here's a list of 10 things one might gift to a minimalist for their birthday or a special occasion. Minimalists look to gain experiences over items. The below reflect this notion, where many minimalists enjoy and appreciate even activities outside of our comfort zone.
 
 
 1. **iTunes Gift Card** - One of the best gifts so far. You can buy lot of different virtual goods with it including books, music, audiobooks, apps and even rent a movie. **_But be aware:_** _You should check what store country the person is using, because the Euro card is not compatible with US iTunes store, as example._

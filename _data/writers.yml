@@ -1,11 +1,13 @@
 - name: Taras Kalapun
   github: xslim
-  image: taras
+  homepage: http://kalapun.com
   gravatar:
   gplus: +TarasKalapun
+  bio: He's an IT-problem solver and adrenaline junky. Skydiving, scuba diving, sailing, motorcycling and off-road racing are just someways he gets away from his programming screen. For Taras, it is not just where you explore, but how and with what equipment.
 
 - name: Emily Vernon
   github: emilygv
-  image: emily
+  homepage: http://emilyvernon.com
   gravatar:
   gplus: 104794774790907430650
+  bio: She's a cute girl who also designs footwear. If traveling could be a full-time job, her bags would already be packed and on the way to Schiphol. From crossing the United States by train to hopping around Europe, she pursues the new and exquisite.

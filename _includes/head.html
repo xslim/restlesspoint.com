@@ -9,25 +9,25 @@
 	<title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 	{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-	
+
 	<!-- Open Graph/Facebook headers -->
-	
+
 	<meta property="og:locale" content="en_US">
 	<meta property="og:type" content="article">
-	
+
 	{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% elsif site.permalink contains category_dir %}{{ '/' | page.url | remove:'index.html' | '/' }}{% else %}{{ page.url | remove:'index.html' | '/' }}{% endif %}{% endcapture %}
 	<link rel="canonical" href="{{ canonical }}">
 	<meta property="og:url" content="{{ canonical }}">
 	<meta name="twitter:url" content="{{ canonical }}">
 	<meta property="og:site_name" content="{{ site.title }}">
-	
+
 	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-	
+
 	{% capture description %}{% if page.description %}{{ page.description }}{% else %}{{ content | raw_content }}{% endif %}{% endcapture %}
 	<meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:300 }}">
 	<meta name="twitter:description" content="{{ description | strip_html | condense_spaces | truncate:300 }}">
-	
+
 	{% if page.image_feature %}
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:image" content="{{ page.image_feature }}">
@@ -37,14 +37,14 @@
 	<meta name="twitter:image" content="{% if page.image_thumb %}{{ page.image_thumb }}{% else %}/images/{{ site.logo }}{% endif %}">
 	<meta property="og:image" content="{% if page.image_thumb %}{{ page.image_thumb }}{% else %}/images/{{ site.logo }}{% endif %}">
 	{% endif %}
-	
+
 	<meta name="twitter:creator" content="@{{ site.owner.twitter }}">
-	
+
 	<!-- Webmaster Tools verifications -->
 	{% if site.google_verify %}<meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 	{% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
-	
+
 	<link href="{{ site.feed }}" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 	{% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 
@@ -59,7 +59,7 @@
 	<script src="/js/plugins/modernizr.js"></script>
 
 	<!-- For all browsers -->
-	<link rel="stylesheet" href="/css/main.min.css">
+	<link rel="stylesheet" href="/css/main.css">
 
 	<!-- Webfonts -->
 	<script src="//use.edgefonts.net/lato:n3,i3,n4,i4,n7.js"></script>

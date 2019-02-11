@@ -275,6 +275,12 @@ button {
           border-radius: 200px;
 }
 
+.avatar {
+  -webkit-border-radius: 200px;
+     -moz-border-radius: 200px;
+          border-radius: 200px;
+}
+
 .unstyled-list {
   padding-left: 0;
   margin-left: 0;
@@ -325,6 +331,16 @@ button {
           border-radius: 50px;
 }
 
+.unstyled-list .avatar {
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin-left: 0;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+          border-radius: 50px;
+}
+
 .unstyled-list .thumb {
   float: left;
   margin-left: 0;
@@ -334,6 +350,20 @@ button {
 
 @media only screen and (min-width: 48em) {
   .unstyled-list .preview {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    -webkit-border-radius: 75px;
+       -moz-border-radius: 75px;
+            border-radius: 75px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .unstyled-list .avatar {
     float: left;
     width: 75px;
     height: 75px;

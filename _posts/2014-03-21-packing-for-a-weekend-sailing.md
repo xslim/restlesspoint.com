@@ -1,12 +1,8 @@
 ---
 categories: articles
-layout: post
-published: true
 title: Packing for a weekend sailing
-comments: true
 author: xslim
-description: null
-tags: 
+tags:
   - sailing
   - packing
 image_thumb: "http://farm8.staticflickr.com/7146/6753836765_60990cfdc0_s.jpg"

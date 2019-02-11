@@ -1,21 +1,35 @@
-title:            Restless Point
-tagline:          info for restless people
-description:      "Restless point."
+title: Restless Point
 
-# Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://restlesspoint.com
+permalink: /:categories/:title/
+future: true
+kramdown:
+   input: GFM
+   hard_wrap: false
+gfm_quirks: paragraph_end
+# repository: xslim/restlesspoint.com
 
-safe:        true
-future:      true
-lsi:         false
-markdown:    kramdown
-# http://jekyllrb.com/docs/permalinks/
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-avatar
+  - jekyll-default-layout
+  - jekyll-github-metadata
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
 
-permalink:   /:categories/:title/
-relative_permalinks: false
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
 
-logo:             logo-50.png
+readme_index:
+  enabled:          true
+  remove_originals: true
+
+logo: logo-50.png
 disqus_shortname: restlesspoint
+
 
 
 # Owner/author information
@@ -28,15 +42,11 @@ owner:
   instagram:
   github:
   facebook:
-  # For Google Authorship https://plus.google.com/authorship
-  # google_plus:    "http://plus.google.com/+TarasKalapun"
 
-feed: http://feeds.feedburner.com/RestlessPoint
+# feed: http://feeds.feedburner.com/RestlessPoint
 
 google_analytics: UA-2087894-20
 google_verify:
-bing_verify:
-alexa_verify:
 
 # Internal pages/posts to include in top navigation
 links:
@@ -46,37 +56,8 @@ links:
     url: /spots/
   - title: Articles
     url: /articles/
-  - title: Map
-    url: /map/
   - title: About
     url: /about/
-
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: [smart]
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..2
-  use_coderay: true
-
-  coderay:
-    coderay_line_numbers:
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
-
-include: [".htaccess"]
-exclude: ["vendor",".bundle","lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "codekit-config.json", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "Gruntfile.js", "package.json", "atom.xml"]
 
 # Map
 map:
@@ -84,130 +65,3 @@ map:
   zoom: 12
   map_as_feature: true
   google_api_key: AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA
-
-
-# Prose settings
-prose:
-  rooturl: '_posts'
-  siteurl: "http://restlesspoint.com"
-  relativeLinks: 'http://restlesspoint.com/api/prose/links.jsonp'
-  media: 'images'
-  # site:
-  #     tags: "https://www.healthcare.gov/api/prose/tags.jsonp"
-  ignore:
-    - /_layouts
-    - /_includes
-  metadata:
-    _posts:
-      - &pm_layout
-        name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - &pm_title
-        name: "title"
-        field:
-          element: "text"
-          label: "Title"
-          placeholder: "Title of a post"
-      - &pm_published
-        name: "published"
-        field:
-          label: "Published"
-          element: "checkbox"
-          value: true
-      - &pm_comments
-        name: "comments"
-        field:
-          label: "Allow comments"
-          element: "checkbox"
-          value: true
-      - &pm_author
-        name: "author"
-        field:
-          element: "select"
-          label: "Author"
-          options: "http://restlesspoint.com/api/prose/writers.jsonp?callback=writers"
-      - &pm_tags
-        name: "tags"
-        field:
-          element: "multiselect"
-          label: "Add Tags"
-          placeholder: "Choose Tags"
-          options: "http://restlesspoint.com/api/prose/tags.jsonp"
-          alterable: true
-      - &pm_description
-        name: "description"
-        field:
-          element: "textarea"
-          label: "Description"
-          placeholder: "An article description that will be shown on homepage"
-          value: ""
-      - &pm_image_thumb
-        name: "image_thumb"
-        field:
-          element: "text"
-          label: "Image Thumb"
-          placeholder: "will be shown on homepage"
-      - &pm_image_feature
-        name: "image_feature"
-        field:
-          element: "text"
-          label: "Image Feature"
-          placeholder: "will be shown on top of post"
-      - &pm_location
-        name: "location"
-        field:
-          element: "text"
-          label: "Location"
-          placeholder: "lat, lng : zoom"
-      - name: "categories"
-        field:
-          element: "text"
-          label: "Categories"
-          value: ""
-    _posts/travel:
-      - *pm_layout
-      - *pm_title
-      - *pm_published
-      - *pm_comments
-      - *pm_author
-      - *pm_tags
-      - *pm_description
-      - *pm_image_thumb
-      - *pm_image_feature
-      - *pm_location
-      - name: "categories"
-        field:
-          element: "hidden"
-          value: "travel"
-    _posts/spots:
-      - *pm_layout
-      - *pm_title
-      - *pm_published
-      - *pm_comments
-      - *pm_author
-      - *pm_tags
-      - *pm_description
-      - *pm_image_thumb
-      - *pm_image_feature
-      - *pm_location
-      - name: "categories"
-        field:
-          element: "hidden"
-          value: "spots"
-    _posts/articles:
-      - *pm_layout
-      - *pm_title
-      - *pm_published
-      - *pm_comments
-      - *pm_author
-      - *pm_tags
-      - *pm_description
-      - *pm_image_thumb
-      - *pm_image_feature
-      - *pm_location
-      - name: "categories"
-        field:
-          element: "hidden"
-          value: "articles"

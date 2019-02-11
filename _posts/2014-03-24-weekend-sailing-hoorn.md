@@ -1,12 +1,8 @@
 ---
 categories: travel
-layout: post
-published: true
 title: "Weekend sailing: Hoorn, Checkpoint Charlie, Urk"
-comments: true
 author: xslim
-description: null
-tags: 
+tags:
   - sailing
   - travel
   - weekend
@@ -14,10 +10,10 @@ image_thumb: "http://farm4.staticflickr.com/3669/13376005583_9df2e9e807_s.jpg"
 image_feature: "http://farm3.staticflickr.com/2862/13375828185_0c19febd1f_o.jpg"
 ---
 
-Once again we did a weekend sailing trip. 
+Once again we did a weekend sailing trip.
 
 ## The route
-This time we planned to do a circle from Enkhuizen Saturday morning, thru the lock to Markermeer (Marker Lake) and towards Volendam Saturday afternoon. But the wind was not helping us, so we made a turn to Hoorn, the city I enjoy most; continued to Lelystaad, went  thru the lock and into a small marina for the night. 
+This time we planned to do a circle from Enkhuizen Saturday morning, thru the lock to Markermeer (Marker Lake) and towards Volendam Saturday afternoon. But the wind was not helping us, so we made a turn to Hoorn, the city I enjoy most; continued to Lelystaad, went  thru the lock and into a small marina for the night.
 
 Next day, we sailed to a restaurant in a middle of nowhere.
 
@@ -61,7 +57,7 @@ A nice walking street with cozy restaurants and cafes:
 ## Lelystad
 ![Map on 52.53026879229302,5.439605712890625](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.439605712890625,52.53026879229302,11/640x200.png)
 
-Due to the optimal wind direction it was fast sailing from Hoorn, but as soon as we passed the lock in Lelystad, it suddenly became dark. So we went into the nearest small marina and parked just in front of restaurant. 
+Due to the optimal wind direction it was fast sailing from Hoorn, but as soon as we passed the lock in Lelystad, it suddenly became dark. So we went into the nearest small marina and parked just in front of restaurant.
 <!-- http://www.flickr.com/photos/xslim/13376221804 -->
 [![Small marina in Lelystaad](http://farm8.staticflickr.com/7045/13376221804_c0737f4da4_z.jpg)](http://farm8.staticflickr.com/7045/13376221804_c0737f4da4_b.jpg)
 
@@ -70,7 +66,7 @@ After having an awesome dinner, the crew played cards:
 <!-- http://www.flickr.com/photos/xslim/13375979793 -->
 [![Crew relaxing after long day](http://farm3.staticflickr.com/2832/13375979793_3a7ea77c55_z.jpg)](http://farm3.staticflickr.com/2832/13375979793_3a7ea77c55_b.jpg)
 
-## Checkpoint Charlie 
+## Checkpoint Charlie
 ![Map on 52.63528977252829,5.415894985198975](http://api.tiles.mapbox.com/v3/xslim.hgm2p8g2/5.415894985198975,52.63528977252829,15/640x200.png)
 
 [<i class="fa fa-foursquare"></i>](https://foursquare.com/v/checkpoint-charlie/4c46afbac047be9a714e2e79) A tiny restaurant / marina in a middle of nowhere. To be exact - in a middle of a dike that cuts the IJsselmeer and Markemeer. After having cacao and some rest, the sun came out, so the crew made some photos on the boat :)

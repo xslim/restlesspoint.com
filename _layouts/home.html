@@ -28,12 +28,13 @@
         <ul class="post-index unstyled-list">
         {% for post in site.posts limit:15 %}
         {% assign readtime = post.content | number_of_words | divided_by:200 %}
+        {% assign excerpt = post.excerpt | strip_html | truncatewords:50 %}
           <li>
             <article itemscope itemtype="http://schema.org/Article">
               <a href="{{ post.url }}" itemprop="url">
                 {% if post.image_thumb %}<img src="{{ post.image_thumb }}" class="preview" alt="preview image" itemprop="image">{% else %}<img src="/images/{{ site.logo }}" class="preview" alt="preview image" itemprop="image">{% endif %}
                 <h1 itemprop="name">{{ post.title }}</h1>
-                <p itemprop="description">{{ post.description }}</p>
+                <p itemprop="description">{{ excerpt }}</p>
                 </a>
                 <p class="entry-meta">
                   <span>in <a href="/{{ post.categories.first }}">{{ post.categories.first | capitalize }}</a></span> &#8901;
@@ -58,7 +59,7 @@
   </footer>
 </div><!-- /.footer-wrapper -->
 
-{% include scripts.html %}          
+{% include scripts.html %}
 
 </body>
 </html>
