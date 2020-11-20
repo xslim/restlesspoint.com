@@ -10,13 +10,13 @@ gfm_quirks: paragraph_end
 
 plugins:
   - jekyll-redirect-from
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-avatar
   - jekyll-default-layout
   - jekyll-github-metadata
   - jekyll-readme-index
   - jekyll-titles-from-headings
+#  - jekyll-sitemap
+#  - jekyll-feed
+#  - jekyll-avatar
 
 titles_from_headings:
   enabled:     true
@@ -27,8 +27,8 @@ readme_index:
   enabled:          true
   remove_originals: true
 
-logo: logo-50.png
-disqus_shortname: restlesspoint
+#logo: logo-50.png
+#disqus_shortname: restlesspoint
 
 
 
@@ -49,19 +49,19 @@ google_analytics: UA-2087894-20
 google_verify:
 
 # Internal pages/posts to include in top navigation
-links:
-  - title: Travel
-    url: /travel/
-  - title: Spots
-    url: /spots/
-  - title: Articles
-    url: /articles/
-  - title: About
-    url: /about/
+#links:
+#  - title: Travel
+#    url: /travel/
+#  - title: Spots
+#    url: /spots/
+#  - title: Articles
+#    url: /articles/
+#  - title: About
+#    url: /about/
 
 # Map
-map:
-  type: 'leaflet'
-  zoom: 12
-  map_as_feature: true
-  google_api_key: AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA
+#map:
+#  type: 'leaflet'
+#  zoom: 12
+#  map_as_feature: true
+#  google_api_key: AIzaSyAwvfaem3xhKaM0pZSj0P_TcuRRaNbB6RA
