@@ -1,14 +1,14 @@
 ---
 layout: page
 published: true
-permalink: /travel/
+permalink: /_spots/
 title: Spots
 ---
 
-A travel articles
+A review articles of different spots & places
 
 <ul class="post-index unstyled-list">
-{% for post in site.categories.travel %}
+{% for post in site.categories.spots %}
 {% assign readtime = post.content | number_of_words | divided_by:200 %}
 	<li>
 		<article itemscope itemtype="http://schema.org/Article">

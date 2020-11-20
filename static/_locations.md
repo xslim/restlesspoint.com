@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /map/
+permalink: /_map/
 title: Locations
 description: ""
 published: true

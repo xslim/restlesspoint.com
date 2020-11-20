@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /tag/
+permalink: /_tag/
 title: Tag Index
 description: "An archive of posts sorted by tag."
 ---
